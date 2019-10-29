@@ -4,7 +4,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>css</title>
+	<!-- link:css -->
 	<link rel="stylesheet" href="style.css">
+	<style>
+		div{color:red;} /*tag selector */
+		div.box{color:blue;} /* class selector .box{color:blue}*/
+		div#vbox{color:black;} /*id selector #vbox{color:blue}*/
+	</style>
+
 </head>
 <body>
 	<h3>스타일 맛보기</h3>
@@ -22,7 +29,26 @@
 
 	<!-- (div>lorem2)+(div>lorem2) -->
 	<!-- <div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div> -->
+
 	<div>Lorem ipsum.</div>
- -->
+	<div>Odit, tempora!</div>
+	<div class="box">Vel, unde.</div>
+	<div>Laudantium, quod.</div>
+	<div>Sunt, amet?</div>
+	<div class="box">Quam, odit?</div>
+	<div>Modi, eligendi.</div>
+	<div>Numquam, qui!</div>
+	<div class="box" id="vbox">Deserunt, eum?</div>
+	<div>Suscipit, hic!</div>
+
+
+<!-- 	div.box#vbox1 -->
+	<div class="box" id="vbox1"></div>
+	<!-- div.box#vbox2>a[#]>{menu} -->
+	<div class="box" id="vbox2"><a href="#">menu</a></div>
+	<!-- div.box#vbox2>a[#].vox>{menu} -->
+	<div class="box" id="vbox2"><a href="#" class="vox">menu</a></div>
+
 </body>
 </html>
