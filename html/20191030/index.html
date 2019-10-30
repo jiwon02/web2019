@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>style</title>
+	<style>
+		/*div{
+			background-color: blue;
+			margin: 10px}*/
+		.box1{background-color: skyblue;}
+		.hoho{color:white;}
+		
+		p.box{background-color: skyblue}
+		div.box,
+		p.box{background-color:green;}
+		
+		#vbox{background-color:pink;}
+
+		/*.bird> ul> li> strong {color: red;}*/
+		/*.bird ul strong {color:red;}*/
+		/*.bird > div> strong{color: blue}*/
+		.bird div strong {color: blue}
+		/*ul.menu > strong {color:pink;} x*/
+		ul.menu strong {color:pink;} 
+		.bird div:first-letter{color: red;}
+		ul.menu>li:hover{background-color: skyblue; color:red; font-weight: bold;}
+		ul.menu>li:active{background-color: red;}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet.</div>
+		<!-- div.box>lorem5 -->
+		<div class="box1 hoho">Lorem ipsum dolor sit amet.</div>
+		<div class="box">Lorem ipsum dolor sit amet.</div>
+		<!-- div#vbox>lorem5 -->
+		<div id="vbox" class="box" style="background-color: red">Lorem ipsum dolor sit amet.</div>
+		<!-- .box -->
+		<!-- <div class="box"></div> -->
+		<!-- #vbox1 -->
+		<!-- <div id="vbox1"></div> -->
+		<p class="box">Lorem ipsum dolor sit amet.</p>
+		<div class="bird">
+			<div>Lorem <strong>ipsum dolor</strong> sit amet.</div>
+			<!-- ul>li*3>{gigle$} -->
+			<ul class="menu">
+				<li>gigle1</li>
+				<li><strong>gigle2</strong></li>
+				<li>gigle3</li>
+			</ul>
+			<div>Lorem ipsum dolor sit amet.</div>
+		</div>
+		<hr>
+		<ul>
+				<li>gigle1</li>
+				<li><strong>gigle2</strong></li>
+				<li>gigle3</li>
+			</ul>
+	<hr>
+
+
+</body>
+</html>
