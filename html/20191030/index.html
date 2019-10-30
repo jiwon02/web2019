@@ -4,7 +4,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>style</title>
+
+	<!-- @구글 웹폰트@ -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
 	<style>
+		/*@css 스타일@*/
 		/*div{
 			background-color: blue;
 			margin: 10px}*/
@@ -17,15 +22,25 @@
 		
 		#vbox{background-color:pink;}
 
+		/*@자식/손@*/
 		/*.bird> ul> li> strong {color: red;}*/
 		/*.bird ul strong {color:red;}*/
 		/*.bird > div> strong{color: blue}*/
-		.bird div strong {color: blue}
+		.bird div strong {color: blue;font-size:2em;}
 		/*ul.menu > strong {color:pink;} x*/
 		ul.menu strong {color:pink;} 
 		.bird div:first-letter{color: red;}
 		ul.menu>li:hover{background-color: skyblue; color:red; font-weight: bold;}
 		ul.menu>li:active{background-color: red;}
+
+		/*@폰트@*/
+		/*body{
+			font-family:"Times New Roman",serif;
+			font-size:20px;}*/
+		/*@웹폰트@*/
+		body{
+			font-family: 'Roboto', sans-serif;}
+
 	</style>
 </head>
 <body>
@@ -57,6 +72,22 @@
 				<li>gigle3</li>
 			</ul>
 	<hr>
+
+	<!-- @a링크, 호버, 블럭 변환,...@ -->
+	<style>
+		*{margin:0px;}
+		a{text-decoration:none;
+			text-align:center;
+			display:block; /*블럭변환*/
+			background-color:#0ff;}
+		a:link,a:visited{color:black;}
+		a:hover{color:skyblue;}
+		h3{background-color:#ffff00;}
+	</style>
+	<h3>
+		<a href="#">menu</a>
+	</h3>
+	
 
 
 </body>
