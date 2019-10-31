@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		.clearfix:after{content:"";display:block;clear:both;}
+
+		div.con{background-color: #ff1f45;}
+		div.box{
+			width: 800px;height: 50px;
+			margin: 0 auto;
+			text-align:center;
+		}
+		/*div.box:after{content:"";display:block;clear:both;}*/
+		div.box li{
+			float:left;
+			width: 20%;
+			line-height: 50px
+		}
+		div.box li:hover{background-color: #ffaa45;}
+
+		hr{margin: 20px 0 20px;}
+
+		div.hoho{background-color: #000;}
+		div.kk{background-color: gray;
+			width: 800px;
+			height: 50px;
+			margin: 0 auto;}
+		/*div.ul:after{content:"";display:block;clear:both;}	*/
+		div.kk li{
+			float:left;
+			width: 25%;}
+		div.kk a{
+			display:block;
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px;
+		}
+		a:link, a:visited {
+			color:white;
+		}	
+		a:hover{
+			color:black;
+			background-color:white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box">
+			<ul class="clearfix">
+				<li>MENU1</li>
+				<li>MENU2</li>
+				<li>MENU3</li>
+				<li>MENU4</li>
+				<li>MENU5</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="hoho">
+		<div class="kk">
+			<ul class="clearfix">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
