@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{margin:0;padding: 0;}
+		li{list-style:none;}
+		ul{background-color: red;
+			width: 600px;
+			/*height: 200px;*/
+		}
+		/*ul:after{content:"";display:block;clear:both;}*/
+		ul > li{
+			float:left;
+			width: 100px;
+			height: 100px;
+			background-color: blue;}
+
+		.wrap{
+			width: 610px;
+			/*height: 100px;*/
+			background-color: pink;}
+		.box{
+			width: 300px;
+			height: 500px;
+			background-color: skyblue;
+			float:left;}
+		/*.nobox{clear:both;}	*/
+
+		/*float 사용시 clearfix(초기값)를 무조건 적용 시켜야함*/
+		.clearfix:after{
+			content:"";
+			display:block;
+			clear:both;} /*after작용은 부모자한테*/
+
+	</style>
+</head>
+<body>
+	<ul class="clearfix">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+
+	<style>
+		
+
+	</style>
+	<div class="wrap clearfix">
+		<div class="box">box</div>
+		<div class="box">box</div>
+		<!-- <div class="nobox"></div>  --><!-- :after의 display block -->
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum, libero rerum labore consequuntur sequi molestiae eveniet fugit eius explicabo porro quaerat accusantium ullam magnam expedita sapiente. Suscipit, beatae qui.</p>
+
+	<style>
+		div.boxafter{background-color: gray;}
+		div.boxafter:after{content:"안녕하세요";} /*after는 맨 마지막에*/
+		div.boxafter:before{content:"jijiji";} /*before은 맨 앞에*/
+	</style>
+	<div class="boxafter">
+		<h1>Lorem.</h1>
+		<p>test</p>
+	</div>
+</body>
+</html>
