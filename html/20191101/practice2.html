@@ -3,52 +3,65 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>practice 2</title>
+	<title>practice2</title>
 	<style>
 		*{margin: 0;padding: 0;}
-		li{list-style-type: none;}
+		li{list-style: none;}
 		a{text-decoration: none;}
 		a:link, a:visited{color:#000;}
 		.clearfix:after{content:"";display:block;clear:both;}
 
-		header#hd{
-			margin: 0 auto;
+		#hd{
 			width: 1000px;
 			height: 100px;
-			background-color: violet;
-			position: relative;r
+			margin: 0 auto;
+			background-color: pink;
+			position: relative;
+			padding-top:10px;
 		}
 		#hd h1{
-			margin: 0 auto;
+			background-color: violet;
+			margin:0 auto;
 			width: 100px;
 			height: 50px;
-			background-color: ivory;
 			text-align: center;
 			line-height: 50px;
 		}
-		#hd nav.navbar{
-			background-color: pink;
+
+		nav.navbar{
+			background-color: skyblue;
 			position: absolute;
 			bottom: 0;
 			width: 1000px;}
-		#hd nav.navbar ul{}
-		#hd nav.navbar ul li{
+		nav.navbar li{
 			float:left;
-			width: 200px;}
-		#hd nav.navbar ul li a{
-			display: block;
-			line-height: 40px;
-			text-align: center;}
-		nav.navbar a:hover{
-			background-color: skyblue;
-			color: #fff;
+			width: 200px;
 		}
+		nav.navbar a{
+			display:block;
+			text-align: center;
+			line-height: 30px;
 
-		div.container{
-			height: 400px;
+		}
+		nav.navbar a:hover{
+			background-color: ivory;
+			color:red;
+		}
+		
+		nav.container{
 			background-color: #ddd;
-		}	
-
+			height: 400px;
+			width: 1000px;
+			margin: 0 auto;
+		}
+		nav.container div{
+			width: 200px;
+			height: 400px;
+			float:left;
+			text-align:center;}
+		nav.container div:hover{
+			background-color: beige;
+		}		
 	</style>
 </head>
 <body>
@@ -64,6 +77,13 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="container"></div>
+
+	<nav class="container clearfix">
+		<div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, repudiandae!</div>
+		<div class="box2">Dolorem ducimus est excepturi vitae molestiae. Quibusdam possimus porro eos?</div>
+		<div class="box3">Adipisci debitis dolorum animi rerum nihil, accusamus distinctio, dolorem corrupti!</div>
+		<div class="box4">Eius soluta similique doloremque molestiae quis maiores temporibus possimus, officia?</div>
+		<div class="box5">Reiciendis explicabo, alias quibusdam voluptates natus porro excepturi ratione delectus.</div>
+	</nav>
 </body>
 </html>
