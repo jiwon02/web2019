@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		a{text-decoration: none;}
+		a:link, a:visited{color:black;}
+
+		body{background-image:url(../images/bg_grid.gif);}
+
+		div{width: 200px;height: 200px;}
+		div.box1{
+			background-color: #f00;
+			/*position: relative;*/ /*되도록 top,left...손대지 말것*/
+			position: absolute; /*제일 나중에 있는 태그가 올라옴*/
+			left:100px;
+			top:100px;
+			z-index:2; /*포지션때 제일 앞으로 나오게 만들어줌*/
+		}
+		div.box2{
+			background-color: #00f;
+			position: absolute;
+			left:150px;
+			top: 150px;
+			z-index: 1;
+		}
+		div.box3{
+			background-color: #0f0;
+			position: absolute;
+			left: 200px;
+			top: 200px;
+			z-index: 1;
+		}
+		div.fix{
+			width: 100%;
+			height: 50px;
+			background-color: #ccc;
+			position: fixed;
+			z-index: 3;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="fix">menu</div>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem iste, nesciunt rerum earum officia pariatur voluptate, vero impedit! Aliquid laboriosam consectetur consequatur error eum eos iusto assumenda accusantium unde nam, aut eligendi rem temporibus at repellat nisi autem debitis laudantium pariatur. Sunt, minus vitae, nisi iure eum eveniet nulla nostrum eaque. Nesciunt itaque libero, quasi accusamus cupiditate laudantium earum eum magnam unde tenetur ea. Incidunt, voluptates porro architecto reprehenderit, inventore sequi obcaecati esse numquam dolorum error eum a maxime eius cum accusantium quis, temporibus vero consequatur et nostrum, itaque vel molestias! Esse qui porro officia, neque provident a perferendis. Voluptate optio, cupiditate vitae enim itaque, soluta veritatis nam provident commodi tempore sunt rerum repudiandae cum, voluptates maxime dolorem repellendus dolor minima autem quos explicabo possimus ut mollitia! Totam accusamus sequi assumenda id inventore placeat aspernatur odit quasi nobis nesciunt voluptatem consequuntur iure exercitationem veniam aperiam quisquam eos, beatae harum consectetur cumque dolore vitae fugiat vel ab, hic. Accusamus quos cum esse nam, quibusdam numquam error quae fuga dicta eveniet minus, quod. Ratione nihil quas ipsa doloremque illum rem, ea! Placeat, omnis autem quisquam magni blanditiis minus sint eligendi ipsa inventore quos, nobis consequatur nisi deserunt quo perspiciatis! Eius porro velit officia, quos delectus non saepe perferendis. Consectetur ipsa architecto necessitatibus rem tempora eius. Libero odit, in, reiciendis, magni sapiente, similique ex optio ea necessitatibus consectetur aliquid. Nesciunt nulla molestias est, dolorem cum aperiam repellat hic voluptatem architecto iusto sed consequatur sequi tenetur esse debitis vero facilis aut delectus ratione minus animi sapiente! Quas laboriosam labore soluta in aut eos ullam officia consectetur similique quasi consequuntur, alias, doloribus, quia saepe repellendus eius dicta iste! Quam sunt distinctio quos enim saepe vel consequatur rem cupiditate ducimus, voluptate quae explicabo repellat odit, aliquid quibusdam ad vitae dolorem beatae fuga et. Nobis blanditiis et fugit libero, quia assumenda earum architecto deleniti nam, dignissimos! Totam vero eos optio enim exercitationem dignissimos voluptatum, impedit libero quaerat hic fugit saepe reprehenderit. Tenetur hic necessitatibus tempore cupiditate, praesentium possimus laborum sed minus dignissimos voluptatum doloribus, magnam molestiae quis corrupti perferendis, nisi vitae labore optio repellat incidunt nobis. Ea sequi accusantium quibusdam cupiditate porro dolorem laborum autem suscipit totam voluptatem pariatur earum tempora voluptatum magni, quaerat veritatis culpa dolorum aperiam eius, illum, provident. Laboriosam rerum alias nostrum, amet nulla quasi maxime pariatur autem harum atque? Soluta quia dicta non maiores aspernatur reprehenderit officia! Asperiores dolore aperiam animi, quidem placeat quia accusamus, quaerat error ipsa laboriosam iure at voluptatum iusto dolor quam odio, ratione maiores aut sed tempore enim, quisquam sequi impedit temporibus voluptatibus! Velit quaerat architecto repellendus numquam expedita omnis voluptatem pariatur illo, similique, suscipit voluptate. Iure, repellendus quibusdam at nobis. Quod aliquam atque nulla non, est facere alias veritatis obcaecati quae vero, sequi delectus. Cupiditate necessitatibus, saepe, distinctio earum expedita iusto et facilis commodi odio, quibusdam nihil eos? Sunt suscipit quaerat fugit molestias, mollitia sed facere, deleniti perferendis voluptatem! Pariatur dolor, facere dolorem odit blanditiis rem vitae totam, explicabo debitis iste, quis enim cupiditate fugiat beatae officia.
+
+</body>
+</html>
