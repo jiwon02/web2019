@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		li{list-style:none;}
+		a{text-decoration:none;}
+		a:link, a:visited{color:black;}
+		.clearfix:after{content:"";display:block;clear:both;}
+
+		ul.navFirst {
+			margin: 0 auto;
+			width: 800px;
+			background-color: skyblue;}
+
+		/*ul.navFirst:after{content:"";display:block;clear:both;}	*/
+		ul.navFirst>li{
+			float:left;
+			width: 133.3333px;
+			line-height:40px;
+			text-align:center;
+		}	
+		ul.navFirst>li:hover{
+			background-color:blue;
+			color:white;
+		}
+
+		ul.navSecond{
+			margin: 0 auto;
+			width: 800px;
+			background-color:pink;}
+
+		/*ul.navSecond:after{content:"";display:block;clear:both;}	*/
+		ul.navSecond>li{
+			float:left;
+			width: 16.667%;
+			}
+		ul.navSecond>li>a{
+			display:block;
+			text-align: center;
+			line-height:40px;
+			/*width:133.3333px;*/}
+		ul.navSecond>li>a:hover{background-color: red;
+			color:white;}
+			
+		div.wrapper{background-color: violet;}
+		div.wrap{
+			margin: 0 auto;
+			width: 800px;
+			background-color: ivory;}
+		div.wrap li{
+			float:left;
+			width: 133.3333px;}	
+		div.wrap a{
+			display:block;
+			line-height: 40px;
+			text-align:center;
+			font-family:Time New Roman, serif;
+			font-weight: bold;
+		}
+		div.wrap a:hover{
+			background-color: red;
+			color:white;
+		}	
+
+	</style>
+</head>
+<body>
+	<nav class="navwrap">
+		<ul class="navFirst clearfix">
+			<li>MENU1</li>
+			<li>MENU2</li>
+			<li>MENU3</li>
+			<li>MENU4</li>
+			<li>MENU5</li>
+			<li>MENU6</li>
+		</ul>
+	</nav>
+
+	<ul class="navSecond clearfix">
+		<li><a href="#">MENU1</a></li>
+		<li><a href="#">MENU2</a></li>
+		<li><a href="#">MENU3</a></li>
+		<li><a href="#">MENU4</a></li>
+		<li><a href="#">MENU5</a></li>
+		<li><a href="#">MENU6</a></li>
+	</ul>
+
+	<div class="wrapper">
+		<div class="wrap">
+			<ul class="navThird clearfix">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
