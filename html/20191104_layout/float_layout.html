@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float_layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		header#hdWrap{
+			width: 1000px;
+			height: 50px;
+			margin: 0 auto;
+			background-color: skyblue;
+		}
+		#hdWrap:after{content:"";display:block;clear:both;}
+		#hdWrap h1{
+			width: 120px;
+			line-height: 50px;
+			float:left;
+		}
+		nav.navWrap{
+			width: 800px;
+			float:right;
+		}
+		nav.navWrap ul:after{content:"";display:block;clear:both;}
+		nav.navWrap li{
+			float:left;
+			width: 160px;}
+		nav.navWrap a{
+			display:block;
+			text-align: center;
+			line-height: 50px;
+		}
+		.navWrap a:hover{
+			background-color: ivory;
+		}
+	</style>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>LOGO</h1>
+		<nav class="navWrap">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
