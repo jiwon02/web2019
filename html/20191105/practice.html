@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		#hd{
+			width: 1000px;
+			height: 120px;
+			background-color: skyblue;
+			margin: 0 auto;
+			position: relative;
+		}
+		#hd h1{
+			width: 120px;
+			line-height: 120px;
+		}
+		.nO{
+			width: 300px;
+			position: absolute;
+			right: 0;top: 0;
+			background-color: ivory;
+		}
+		.nO ul:after{content:"";display: block;clear: both;}
+		.nO li{
+			float:left;
+			width: 100px;
+			border-right:1px solid #000;
+			box-sizing:border-box;
+		}
+		/*.nO li:first-child{border-left:1px solid #000;}*/
+		.nO li:last-child{border-right:none;}
+		.nO a{
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+
+		.nT{
+			width: 800px;
+			position: absolute;
+			right: 0;bottom: 0;
+			background-color: pink;
+		}
+		.nT ul:after{content:"";display: block;clear: both;}
+		.nT li{
+			float:left;
+			width: 160px;			
+			border-right:1px solid #000;
+			box-sizing:border-box;
+		}
+		/*.nT li:first-child{border-left:1px solid #000;}*/
+		.nT li:last-child{border-right:none;}
+		.nT a{
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<nav class="nO">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+			</ul>
+		</nav>
+		<nav class="nT">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
