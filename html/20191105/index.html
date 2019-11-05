@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>background</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{
+			background-image:url(../images/pc01.jpg);
+			background-repeat: no-repeat;/*repeat-x*//* repeat-y/**/
+			background-position:right;}
+		.logo{
+			width: 120px;
+			height: 30px;
+			
+		}
+		.logo h1{
+			height: 30px;
+			font-size:1em;
+			background-image: url(../images/naver.png);
+			background-repeat: no-repeat;
+        }
+        .logo a{
+        	display: block;
+        	line-height: 30px;
+        	text-align: center;
+        	text-indent:-9999px;
+        }
+        .button,.buttonOne{
+        	background-image: url(../images/naver.png);
+        }
+        .button{
+        	width: 56px;
+        	height: 20px;
+        	/*background-image: url(../images/naver.png);*/
+        	background-position: -124px 0;
+        	text-indent: -9999px;
+        }
+        .button:hover{
+        	background-position: -124px -23px;
+        }
+        .buttonOne{
+        	width: 47px;
+        	height: 20px;
+        	/*background-image: url(../images/naver.png);*/
+        	background-position: -183px 0;
+        	text-indent: -9999px;
+
+        }
+        .buttonOne:hover{
+        	background-position: -183px -46px;
+        }
+
+        .nav ul{
+        	margin: 0 auto;
+        	width: 980px;height: 50px;
+        }
+        .nav ul:after{content:"";display: block;clear: both;}
+        .nav li{
+        	float:left;
+        	background-image: url(../images/sprites.png);
+        	text-indent: -9999px;
+        	width: 140px;
+        	height: 50px;
+        }
+        .nav li:nth-child(1){background-position: 0px 0px;}
+        .nav li:nth-child(1):hover{background-position: 0px -50px;}
+        .nav li:nth-child(2){background-position: -140px 0px;}
+        .nav li:nth-child(2):hover{background-position: -140px -50px;}
+        .nav li:nth-child(3){background-position: -280px 0px;}
+        .nav li:nth-child(3):hover{background-position: -280px -50px;}
+        .nav li:nth-child(4){background-position: -420px 0px;}
+        .nav li:nth-child(4):hover{background-position: -420px -50px;}
+        .nav li:nth-child(5){background-position: -560px 0px;}
+        .nav li:nth-child(5):hover{background-position: -560px -50px;}
+        .nav li:nth-child(6){background-position: -700px 0px;}
+        .nav li:nth-child(6):hover{background-position: -700px -50px;}
+        .nav li:nth-child(7){background-position: -840px 0px;}
+        .nav li:nth-child(7):hover{background-position: -840px -50px;}
+     /*background*/
+        .bgtest{
+        	width: 200px;
+        	height: 200px;
+        	background-color: #ccc;
+        	background-image: url(../images/apple.png);
+        	background-repeat: no-repeat;
+        	background-position: 50%;
+        	/*background-size:cover;*/
+        	/*background:#ccc url(../images/apple.png) no-repeat center;*/
+        }
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1><a href="#">네이버</a></h1>
+	</div>
+    <div class="button">
+    	지식백과
+    </div>
+    <div class="buttonOne">
+    	지식iN
+    </div>
+    <div class="nav">
+    	<ul>
+    		<li><a href="#">menu1</a></li>
+    		<li><a href="#">menu2</a></li>
+    		<li><a href="#">menu3</a></li>
+    		<li><a href="#">menu4</a></li>
+    		<li><a href="#">menu5</a></li>
+    		<li><a href="#">menu6</a></li>
+    		<li><a href="#">menu7</a></li>
+    	</ul>
+    </div>
+    <div class="bgtest"></div>
+</body>
+</html>

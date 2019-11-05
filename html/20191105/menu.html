@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.nav {width: 980px;margin: 0 auto;}
+		.nav ul:after{content:"";display: block;clear: both;}
+		.nav ul li{
+			float:left;
+			width: 140px;
+			background-image: url(../images/sprites.png);			
+			transition:0.3s;
+		}
+		.nav a{
+			display: block;
+			height: 50px;			
+			text-indent: -9999px;
+			}
+
+		.nav ul li:nth-child(1){background-position: 0 0;} /*first-child{}*/
+		.nav ul li:nth-child(1):hover{background-position: 0 -50px;}
+		.nav ul li:nth-child(2){background-position: -140px 0;}
+		.nav ul li:nth-child(2):hover{background-position: -140px -50px;}
+		.nav ul li:nth-child(3){background-position: -280px 0;}
+		.nav ul li:nth-child(3):hover{background-position: -280px -50px;}
+		.nav ul li:nth-child(4){background-position: -420px 0;}
+		.nav ul li:nth-child(4):hover{background-position: -420px -50px;}
+		.nav ul li:nth-child(5){background-position: -560px 0;}
+		.nav ul li:nth-child(5):hover{background-position: -560px -50px;}
+		.nav ul li:nth-child(6){background-position: -700px 0;}
+		.nav ul li:nth-child(6):hover{background-position: -700px -50px;}
+		.nav ul li:nth-child(7){background-position: -840px 0;}
+		.nav ul li:nth-child(7):hover{background-position: -840px -50px;}
+
+		.nav ul li:nth-child(1).active{background-position: 0 -50px;}
+		.nav ul li:nth-child(2).active{background-position: -140px -50px;}
+		.nav ul li:nth-child(3).active{background-position: -280px -50px;}
+		.nav ul li:nth-child(4).active{background-position: -420px -50px;}
+		.nav ul li:nth-child(5).active{background-position: -560px -50px;}
+		.nav ul li:nth-child(7).active{background-position: -840px -50px;}
+		.nav ul li:nth-child(6).active{background-position: -700px -50px;}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li class="active"><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+		</ul>
+	</div>
+</body>
+</html>

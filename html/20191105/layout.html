@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				auto:true,
+				controls:false
+			});
+		});
+	</script>
+	<style>
+		.visual img{
+			width: 100%;
+		}
+		#hdWrap{
+			width: 1000px;
+			height: 120px;
+			margin: 0 auto;
+			background-color: skyblue;
+			position: relative;
+		}
+		#hdWrap h1{
+			background-color: blue;
+			position: absolute;
+			top:45px;	
+			background-image: url(../images/naver.png);
+			width: 125px;height: 30px;
+			text-indent: -9999px;
+		}
+		#hdWrap h1 a{
+			display: block;
+		}
+		nav.navOne{
+			width: 400px;
+			background-color: ivory;
+			position: absolute;
+			right: 0;top: 0;
+		}
+		nav.navOne ul:after{content:"";display: block;clear: both;}
+		nav.navOne li{
+			float:left;
+			width: 100px;
+		}
+		nav.navOne a{
+			display: block;
+			line-height: 40px;
+			text-align: center;
+		}
+		nav.navOne a:hover{background-color: #ddd;color:#fff;}
+
+		nav.navTwo{
+			width: 800px;
+			height: 40px;
+			background-color: pink;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		nav.navTwo ul:after{content:"";display: block;clear: both;}
+		nav.navTwo li{
+			float:left;
+			width: 160px;
+			border-right:1px solid #000; /*테두리*/
+			box-sizing:border-box; /*박스사이징*/
+		}
+		/*nav.navTwo li:first-child{border-left:1px solid #000;}*/
+		nav.navTwo li:last-child{border-right:none;}
+
+		nav.navTwo a{
+			display: block;
+			text-align: center;
+			line-height: 40PX;
+		}
+		nav.navTwo a:hover{background-color: violet;color:#fff;}
+
+		.bx-wrapper {
+           -moz-box-shadow: none;
+           -webkit-box-shadow: none;
+           box-shadow: none;
+           border: none;
+           background: #fff;
+           margin-bottom: 0;
+        }
+        .bx-wrapper .bx-pager{
+        	bottom: 30px;
+        }
+	</style>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1><a href="#">LOGO</a></h1>
+	    <nav class="navOne">
+	    	<ul>
+	    		<li><a href="#">MENU1</a></li>
+	    		<li><a href="#">MENU2</a></li>
+	    		<li><a href="#">MENU3</a></li>
+	    		<li><a href="#">MENU4</a></li>
+	    	</ul>
+	    </nav>
+	    <nav class="navTwo">
+	    	<ul>
+	    		<li><a href="#">MENU1</a></li>
+	    		<li><a href="#">MENU2</a></li>
+	    		<li><a href="#">MENU3</a></li>
+	    		<li><a href="#">MENU4</a></li>
+	    		<li><a href="#">MENU5</a></li>
+	    	</ul>
+	    </nav>
+	</header>
+
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="../images/pc01.jpg" alt=""></li>
+			<li><img src="../images/pc02.jpg" alt=""></li>
+			<li><img src="../images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+
+    <!-- border -->
+    <style>
+    	.box{
+    		width: 100px;height: 100px;
+    		/*border-style:solid/dotted;
+    		border-width: 1px;
+    		border-color:#000;*/
+    		border:1px solid #000;
+    	}
+    </style>
+	<div class="box"></div>
+</body>
+</html>
