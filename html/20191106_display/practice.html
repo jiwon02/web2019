@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".sliderO").bxSlider({
+				auto:true,
+				controls:false
+				});
+			$('.sliderT').bxSlider({
+				auto:true,
+				controls:false
+			});
+		});
+	</script>
+	<style>
+		.clearfix:after{content:"";display: block;clear: both;}
+
+		/*header*/
+		#hd{
+			width: 1000px;height: 120px;
+			background-color: skyblue;
+			margin: 0 auto;
+			position: relative;
+		}
+		#hd h1{
+			width: 120px;
+			text-align: center;
+			line-height: 120px;
+		}
+		.nO{
+			width: 300px;
+			background-color: ivory;
+			position: absolute;
+			right: 0;top: 0;
+		}
+		.nO li{
+			float:left;
+			width: 100px;
+			border-right:1px solid #000;
+			box-sizing:border-box;
+		}
+		.nO li:last-child{border-right:none;}
+		.nO a{
+			display: block;
+			line-height: 40px;
+			text-align: center;
+		}
+		.nO a:hover{background-color: pink;}
+
+		.nT{
+			width: 800px;
+			position: absolute;
+			right: 0;bottom: 0;
+			background-color: pink;
+		}
+		.nT li{
+			float:left;
+			width: 160px;
+			border-left:1px solid #000;
+			box-sizing:border-box;
+		}
+		.nT li:first-child{border-left:none;}
+		.nT a{
+			display: block;
+			line-height: 40px;
+			text-align: center;
+		}
+		.nT a:hover{background-color: ivory;}
+
+		/*.visual*/
+		.bx-wrapper {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none; 
+            box-shadow: none; 
+            border: none; 
+            background: #fff;
+            margin-bottom: 0;
+        }
+        .bx-wrapper .bx-pager{
+        	bottom: 30px;
+        }
+        .sliderO {width: 1200px;height: 500px;}
+        .sliderO img{
+			/*width: 1200px;height: 500px;*/
+			margin: 0 auto;
+		}
+		.sliderT img{margin: 0 auto;}
+
+		/*section*/
+		.container{
+			width: 1000px;height: 300px;
+			background-color: #ddd;
+			margin: 0 auto;
+			position: relative;
+		}
+		.box{
+			width: 700px;height: 300px;
+			background-color: olive;
+			position: absolute;
+			left: 0;
+		}
+		.aside{
+			background-image: url(../images/img1.jpg);
+			width: 300px;height: 300px;
+			position: absolute;
+			right: 0;
+		}
+
+		.menu{
+			width: 980px;
+			margin: 0 auto;
+			text-indent: -9999px;
+		}
+		.menu li{
+			float:left;
+			width: 140px;
+			background-image: url(../images/sprites.png);
+		}
+		.menu li:nth-child(1){background-position: 0px 0px;}
+		.menu li:nth-child(2){background-position: -140px 0px;}
+		.menu li:nth-child(3){background-position: -280px 0px;}
+		.menu li:nth-child(4){background-position: -420px 0px;}
+		.menu li:nth-child(5){background-position: -560px 0px;}
+		.menu li:nth-child(6){background-position: -700px 0px;}
+		.menu li:nth-child(7){background-position: -840px 0px;}
+
+		.menu li:nth-child(1):hover{background-position: 0px -50px;}
+		.menu li:nth-child(2):hover{background-position: -140px -50px;}
+		.menu li:nth-child(3):hover{background-position: -280px -50px;}
+		.menu li:nth-child(4):hover{background-position: -420px -50px;}
+		.menu li:nth-child(5):hover{background-position: -560px -50px;}
+		.menu li:nth-child(6):hover{background-position: -700px -50px;}
+		.menu li:nth-child(7):hover{background-position: -840px -50px;}
+		.menu a{
+			display: block;
+			line-height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<nav class="nO">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+			</ul>
+		</nav>
+		<nav class="nT">
+			<ul class="clearfix">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="visual">
+		<ul class="sliderO">
+			<li><img src="../images/pc01.jpg" alt=""></li>
+			<li><img src="../images/pc02.jpg" alt=""></li>
+			<li><img src="../images/pc03.jpg" alt=""></li>
+		</ul>
+		<ul class="sliderT">
+			<li><img src="../images/images01.jpg" alt=""></li>
+			<li><img src="../images/images02.jpg" alt=""></li>
+			<li><img src="../images/images03.jpg" alt=""></li>
+			<li><img src="../images/images04.jpg" alt=""></li>
+			<li><img src="../images/images05.jpg" alt=""></li>
+		</ul>
+	</div>
+
+	<section class="container clearfix">
+		<div class="box"></div>
+		<div class="aside"></div>
+	</section>
+
+	<div class="menu">
+		<ul class="clearfix">
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+			<li><a href="#">MENU7</a></li>
+		</ul>
+	</div>
+</body>
+</html>
