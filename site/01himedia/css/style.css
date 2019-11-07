@@ -50,3 +50,55 @@ header#main_header{}
 	color: #fff;font-weight: bold;
 }
 #main_menu ul.menu_wrap li a:hover{background-color: skyblue;color: #1d5da4;}
+
+/*visual*/
+#visual_wrap{
+	height: 400px; 
+	background:#203969 url(../images/visual_bg.jpg) no-repeat center;
+}
+#visual_wrap .visual{
+	width: 980px;height: 400px;margin: 0 auto;
+	position: relative;
+}
+#visual_wrap .visual img{
+	position: absolute;
+}
+#visual_wrap .visual img.img01{
+	right: 0;
+}
+#visual_wrap .visual img.img02{
+	left: 0; top: 80px;
+}
+
+/*visiual_icon*/
+#visual_icon{
+	background-color: #aaa;
+}
+#visual_icon .icon_wrap{
+	width: 980px;margin: 0 auto;
+}
+#visual_icon .icon_wrap li{
+	float:left; width: 196px;height: 196px;
+}
+#visual_icon .icon_wrap li:nth-child(1){background-color: #7C99B9;}
+#visual_icon .icon_wrap li:nth-child(2){background-color: #4F74A1;}
+#visual_icon .icon_wrap li:nth-child(3){background-color: #4B8CE0;}
+#visual_icon .icon_wrap li:nth-child(4){background-color: #3DB5F2;}
+#visual_icon .icon_wrap li:nth-child(5){background-color: #95C8FF;}
+#visual_icon .card{
+	padding: 15px;
+	_background-color: pink;
+}
+#visual_icon .card img{
+	display: block; margin: 0 auto; 
+}
+#visual_icon .cardbody{
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+}
+
+#visual_icon .cardbody p{
+	font-size:0.78em;
+	padding-top: 5px;
+}
