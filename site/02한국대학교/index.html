@@ -5,7 +5,16 @@
 	<meta charset="UTF-8">
 	<title>::한국대학교::</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			$(".slider01").bxSlider({auto:true});
+		});
+	</script>
 </head>
 <body>
 	<header id="hd">
@@ -38,13 +47,99 @@
 		</div>
 	</header>
 
-	<section id="sec">
-		<div id="sec01">
-			<div class="sec01text">
-				<h2>함께 나누며 세상을 이끌어</h2>
+	<section id="sec_bg">
+		<div id="visual" class='clearfix'>
+			<div class="visual_text">
+				<p>함께 나누며 세상을 이끌어</p>
 				<h1>세계로향하는 한국대학교</h1>
 			</div>
-			
+			<ul class='visual_icon clearfix'>
+				<li>
+					<div class="card_icon">
+						<img src="images/icon01.png" alt="">
+						<p>입학절차안내</p>
+					</div>
+				</li>
+				<li>
+					<div class="card_icon">
+						<img src="images/icon02.png" alt="">
+						<p>입학설명회</p>
+					</div>
+				</li>
+				<li>
+					<div class="card_icon">
+						<img src="images/icon03.png" alt="">
+						<p>장학제도</p>
+					</div>
+				</li>
+				<li>
+					<div class="card_icon">
+						<img src="images/icon04.png" alt="">
+						<p>증명서발급</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="container_wrap">
+			<ul class='clearfix'>
+				<li>
+					<div class="slider01">
+						<div>
+							<img src="images/main_slid01.jpg" alt="">
+							<div class="slider01_text">
+								<p>
+						          <b>한국</b>에서<br>
+						          <b>시작</b>하는<br>
+						           새로운 <b>꿈</b>
+					            </p>
+					            <a class='btn' href="#">자세히 보기 ▶</a>
+							</div>
+						</div>
+						<div>
+							<img src="images/main_slid02.jpg" alt="">
+							<div class="slider01_text">
+								<p>
+						          <b>한국</b>에서<br>
+						          <b>시작</b>하는<br>
+						           새로운 <b>꿈</b>
+					            </p>
+					            <a class='btn' href="#">자세히 보기 ▶</a>
+							</div>
+						</div>
+						<div>
+							<img src="images/main_slid03.jpg" alt="">
+						    <div class="slider01_text">
+								<p>
+						          <b>한국</b>에서<br>
+						          <b>시작</b>하는<br>
+						           새로운 <b>꿈</b>
+					            </p>
+					            <a class='btn' href="#">자세히 보기 ▶</a>
+							</div>
+						</div>
+					</div>
+					
+				</li>
+				<li>
+					<p class='banner_text'>
+					    <b>APP</b>으로<br>
+						<b>스마트 도서관</b><br>
+						바로 이용하자!
+					</p>
+					<p class='mb20'>
+						모바일 열람증은<br>
+						도서관 자료실/도서대출 등에<br>
+						사용 할 수 있습니다.
+					</p>
+					<a class='btn' href="#">자세히 보기 ▶</a>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
 	</section>
 </body>

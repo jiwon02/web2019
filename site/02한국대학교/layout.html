@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<style>
+		*{font-family: 'Nanum Gothic', sans-serif;}
+		#sec_wrap{
+			background: #558fce url(images/mainbg01.jpg) no-repeat center;
+		}
+		#sec_wrap .con_wrap{
+			width: 1200px; margin: 0 auto; height: 260px;
+			background-color: #ccc;
+			padding-top: 75px;
+		}
+		#sec_wrap .con_wrap>div.title{float: left;}
+		#sec_wrap .con_wrap>div.con_icon{float: right;}
+
+		/*container_wrap*/
+		.container_wrap{
+			width: 1200px; margin: 0 auto;
+		}
+		.container_wrap li{
+			float: left; height: 225px; width: 25%;
+		}
+		.container_wrap li:nth-child(1){width: 75%; height: 450px;background-color: #f00;}
+		.container_wrap li:nth-child(2){width: 25%; height: 450px;background-image:url(images/banner01.jpg);}
+		.container_wrap li .banner01{
+			padding-top: 80px; padding-left: 40px;
+			color: #fff;
+		}
+		.container_wrap li .banner01 .banner_text{
+			font-size: 2em; margin-bottom: 20px;
+		}
+		.container_wrap li:nth-child(3){background-color: #00f;}
+		.container_wrap li:nth-child(4){background-color: #0ff;}
+		.container_wrap li:nth-child(5){background-color: #ff0;}
+		.container_wrap li:nth-child(6){background-color: #f0f;}
+		.container_wrap li:nth-child(7){background-color: #ddd;}
+		.container_wrap li:nth-child(8){background-color: #000;width: 75%;}
+
+		.bx-wrapper {
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none; 
+          box-shadow: none; 
+          border: none; 
+          background: none; 
+          margin-bottom: 0;
+        }
+        .bx-wrapper .bx-pager{
+        	bottom: 30px;
+        }
+
+        /*common*/
+        a.btn{
+        	width: 200px; display: block; 
+        	line-height: 40px; text-align: center;
+        	_border: 1px solid #fff;
+        	border-radius:20px;
+        	font-weight: bold;
+        	color: #fff;
+        	background-color: rgba(0,0,0,0.5);
+        	transition:0.3s;
+        }
+        a.btn:hover{background-color: rgba(0,0,0,1)}
+        .mb10{margin-bottom: 10px !important;}
+        .mb20{margin-bottom: 20px !important;}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider01").bxSlider({auto:true});
+			$(".slider02").bxSlider({auto:true});
+		});
+	</script>
+</head>
+<body>
+	<section id="sec_wrap">
+		<div class="con_wrap clearfix">
+			<div class="title">
+				<span>함께 나누며 세상을 이끌어</span>
+				<h3>세계로향하는 한국대학교</h3>
+			</div>
+			<div class="con_icon">
+			</div>
+		</div>
+		<div class="container_wrap">
+			<ul class='clearfix'>
+				<li>
+					<div class="slider01">
+						<div>
+							<img src="images/main_slid01.jpg" alt="대학모집">
+						</div>
+						<div>
+							<img src="images/main_slid02.jpg" alt="캠퍼스안내">
+						</div>
+						<div>
+							<img src="images/main_slid03.jpg" alt="학과안내">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner01">
+						<p class="banner_text">
+							<b>APP</b>으로<br>
+						    <b>스마트도서관</b><br>
+						    바로 이용하자!
+						</p>
+						<p class='mb20'>
+							모바일 열람증은<br>
+							도서관 자료실/도서대출 등에<br> 
+							사용할 수 있습니다.
+						</p>
+						<a href="#" class="btn">자세히보기 ▶</a>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li>
+					<div class="slider02">
+						<div><img src="images/banner_slid01.jpg" alt=""></div>
+						<div><img src="images/banner_slid02.jpg" alt=""></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>
