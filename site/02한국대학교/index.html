@@ -12,7 +12,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider01").bxSlider({auto:true});
+			var mySlider = $(".slider01").bxSlider({auto:true, controls:false});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
 		});
 	</script>
 </head>
@@ -21,7 +27,7 @@
 		<div class="util_wrap">
 			<div class="util clearfix">
 				<ul class='util_menu clearfix'>
-					<li><a href="#">대학교</a></li>
+					<li><a class='active' href="#">대학교</a></li>
 					<li><a href="#">입학안내</a></li>
 					<li><a href="#">대학원</a></li>
 				</ul>
@@ -81,44 +87,27 @@
 			</ul>
 		</div>
 		<div id="container_wrap">
-			<ul class='clearfix'>
+			<ul class='container clearfix'>
 				<li>
 					<div class="slider01">
 						<div>
 							<img src="images/main_slid01.jpg" alt="">
-							<div class="slider01_text">
-								<p>
-						          <b>한국</b>에서<br>
-						          <b>시작</b>하는<br>
-						           새로운 <b>꿈</b>
-					            </p>
-					            <a class='btn' href="#">자세히 보기 ▶</a>
-							</div>
 						</div>
 						<div>
 							<img src="images/main_slid02.jpg" alt="">
-							<div class="slider01_text">
-								<p>
-						          <b>한국</b>에서<br>
-						          <b>시작</b>하는<br>
-						           새로운 <b>꿈</b>
-					            </p>
-					            <a class='btn' href="#">자세히 보기 ▶</a>
-							</div>
 						</div>
 						<div>
 							<img src="images/main_slid03.jpg" alt="">
-						    <div class="slider01_text">
-								<p>
-						          <b>한국</b>에서<br>
-						          <b>시작</b>하는<br>
-						           새로운 <b>꿈</b>
-					            </p>
-					            <a class='btn' href="#">자세히 보기 ▶</a>
-							</div>
 						</div>
 					</div>
-					
+					<div class="prevBtn"><img src="images/btn_prev.png" alt=""></div>
+					<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
+					<div class="slide_text">
+						<p class="mb20">
+							<b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b>
+						</p>
+						<a class='btn' href="#">자세히 보기 ▶</a>
+					</div>
 				</li>
 				<li>
 					<p class='banner_text'>
@@ -133,10 +122,48 @@
 					</p>
 					<a class='btn' href="#">자세히 보기 ▶</a>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<h3 class='mb20'>HOT LINK</h3>
+					<ul class='hotlink clearfix'>
+						<li>
+							<div class="link_card">
+								<img class="mb10"src="images/hotlink01.png" alt="">
+								<p>국제교류<br>센터</p>
+							</div>
+						</li>
+						<li>
+							<div class="link_card">
+								<img class="mb10" src="images/hotlink02.png" alt="">
+								<p>원격지원<br>시스템</p>
+							</div>
+						</li>
+						<li>
+							<div class="link_card">
+								<img class="mb10" src="images/hotlink03.png" alt="">
+								<p>예산/결산<br>공고</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class='mb20'>공지사항</h3>
+					<hr>
+					<img src="images/school.png" alt="">
+				</li>
+				<li class='clearfix'>
+					<h3 class='mb20'>SNS NEWS</h3>
+					<img src="images/학교01.jpg" alt="">
+					<div>
+						<p>한국 대학교는</p>
+						<p>2017학년도 신입생</p> 
+						<p>입학식을 3월 2일(목)</p> 
+						<p>본교 종합체육관...</p>
+					</div>
+					
+				</li>
+				<li>
+					<div>캠퍼스 투어</div>
+				</li>
 				<li></li>
 				<li></li>
 			</ul>
