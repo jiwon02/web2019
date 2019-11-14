@@ -20,11 +20,17 @@
 				mySlider.goToNextSlide();
 			});
 			$(".slider02").bxSlider({auto:true,controls:false});
-			$(".slider03").bxSlider({
+			var mySlider02 = $(".slider03").bxSlider({
 				auto:true,
 				pager:false,
 				controls:false,
 				mode:"vertical"});
+			$(".subprev_btn").click(function(){
+				mySlider02.goToPrevSlide();
+			});
+			$(".subnext_btn").click(function(){
+				mySlider02.goToNextSlide();
+			});
 		});
 	</script>
 </head>
@@ -229,12 +235,13 @@
 					<img src="images/sub_banner.png" alt="">
 					<img src="images/sub_banner.png" alt="">
 					<img src="images/sub_banner.png" alt="">
-					<div class="subprev_btn">
-						<img src="images/prevbtn_sub.png" alt="">
-					</div>
-					<div class="subnext_btn">
-						<img src="images/nextbtn_sub.png" alt="">
-					</div>
+
+				</div>
+				<div class="subprev_btn">
+					<img src="images/prevbtn_sub.png" alt="">
+				</div>
+				<div class="subnext_btn">
+					<img src="images/nextbtn_sub.png" alt="">
 				</div>
 			</div>
 		</div>
