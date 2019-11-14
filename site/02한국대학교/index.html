@@ -19,6 +19,12 @@
 			$(".nextBtn").click(function(){
 				mySlider.goToNextSlide();
 			});
+			$(".slider02").bxSlider({auto:true,controls:false});
+			$(".slider03").bxSlider({
+				auto:true,
+				pager:false,
+				controls:false,
+				mode:"vertical"});
 		});
 	</script>
 </head>
@@ -86,28 +92,34 @@
 				</li>
 			</ul>
 		</div>
-		<div id="container_wrap">
+		<div id="container_wrap" class="mb20">
 			<ul class='container clearfix'>
 				<li>
 					<div class="slider01">
 						<div>
 							<img src="images/main_slid01.jpg" alt="">
+							<div class="slide_text">
+								<p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+								<a class='btn'href="#">자세히 보기 ▶</a>
+							</div>
 						</div>
 						<div>
 							<img src="images/main_slid02.jpg" alt="">
+							<div class="slide_text">
+								<p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+								<a class='btn'href="#">자세히 보기 ▶</a>
+							</div>
 						</div>
 						<div>
 							<img src="images/main_slid03.jpg" alt="">
+							<div class="slide_text">
+								<p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+								<a class='btn'href="#">자세히 보기 ▶</a>
+							</div>
 						</div>
 					</div>
 					<div class="prevBtn"><img src="images/btn_prev.png" alt=""></div>
 					<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
-					<div class="slide_text">
-						<p class="mb20">
-							<b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b>
-						</p>
-						<a class='btn' href="#">자세히 보기 ▶</a>
-					</div>
 				</li>
 				<li>
 					<p class='banner_text'>
@@ -147,7 +159,6 @@
 				</li>
 				<li>
 					<h3 class='mb20'>공지사항</h3>
-					<hr>
 					<img src="images/school.png" alt="">
 				</li>
 				<li class='clearfix'>
@@ -159,15 +170,94 @@
 						<p>입학식을 3월 2일(목)</p> 
 						<p>본교 종합체육관...</p>
 					</div>
-					
+					<div class="sns clearfix">
+						<a href="#">페이스북</a>
+						<a href="#">트위터</a>
+						<a href="#">구글</a>
+						<a href="#">유튜브</a>
+					</div>
 				</li>
 				<li>
 					<div>캠퍼스 투어</div>
 				</li>
 				<li></li>
-				<li></li>
+				<li>
+					<div class="slider02">
+						<div>
+							<img src="images/banner_slid01.jpg" alt="">
+							<div class="slid02_text">
+								<p>2017년 신편입생 2차 모집</p>
+								<h2>2017.7.1~7.10</h2>
+								<a class="btn" href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
+						<div>
+							<img src="images/banner_slid01.jpg" alt="">
+							<div class="slid02_text">
+								<p>2017년 신편입생 2차 모집</p>
+								<h2>2017.7.1~7.10</h2>
+								<a class="btn" href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
+						<div>
+							<img src="images/banner_slid01.jpg" alt="">
+							<div class="slid02_text">
+								<p>2017년 신편입생 2차 모집</p>
+								<h2>2017.7.1~7.10</h2>
+								<a class="btn" href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
+						<div>
+							<img src="images/banner_slid01.jpg" alt="">
+							<div class="slid02_text">
+								<p>2017년 신편입생 2차 모집</p>
+								<h2>2017.7.1~7.10</h2>
+								<a class="btn" href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
+		<div id="sub_wrap" class="clearfix">
+			<div class="sub01 clearfix">
+				<div><b>학사일정</b></div>
+				<img src="images/date01.png" alt="">
+			</div>
+			<div class="sub02">
+				<div class="slider03">
+					<img src="images/sub_banner.png" alt="">
+					<img src="images/sub_banner.png" alt="">
+					<img src="images/sub_banner.png" alt="">
+					<div class="subprev_btn">
+						<img src="images/prevbtn_sub.png" alt="">
+					</div>
+					<div class="subnext_btn">
+						<img src="images/nextbtn_sub.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	<footer id="ft">
+		<div class="ft_wrap">
+			<div class="ft_1st mb20">
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국 대학교</a></li>
+					<li><a href="#">개인정보취급방침</a></li>		<li><a href="#">이용정책</a></li>			<li><a href="#">입점/제휴문의 및 광고</a></li>
+					<li><a href="#">이메일 무단수집거부</a></li>
+				</ul>
+			</div>
+			<div class="ft_2nd">
+				<ul>
+					<li>대표자:홍길동 서울특별시 구로구 구로로 300 (구로동 6가) 사업자등록번호:123-56-7890234</li>
+					<li>통신판매업 신고번호:제 1234-서울 구로구-1004호 개인정보관리 책임자:홍길동 소비자피해보상보험</li>
+					<li>고객센터:1234-5678 FAX:02-1234-5678 HANGUKUNIVERSITY@HANGUK.COM</li>
+					<li>COPYRIGHT ㉿ HANGUK.ALL RIGHTS RESERVED.</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

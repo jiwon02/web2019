@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bx slider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var myslide = $(".slider").bxSlider({
+				mode:"vertical",
+				auto:true,
+				controls:false,
+				pagerCustom:".bxpager"
+			});
+			$(".prevBtn").click(function(){
+				myslide.goToPrevSlide();
+			});
+			$(".nextBtn").click(function(){
+				myslide.goToNextSlide();
+			});
+		});	
+	</script>
+	<style>
+		.bx-wrapper {
+   		 	-moz-box-shadow: none;
+    	 	-webkit-box-shadow: none;
+   		 	box-shadow: none;
+   		 	border: none;
+   		 	background: none;
+   		 	margin-bottom: 0;
+		}
+		.wrapper{
+			width: 1260px; margin: 0 auto;
+			position: relative;
+		}
+		.slider_pager{position: absolute;width: 1260px;top: 20px;}
+		.bxpager{}
+		.bxpager a{
+			display: block;
+			_float: left;
+			width: 200px;
+			text-align: center;
+			line-height: 40px;
+			background-color: #f00;
+			color: #fff;
+		}
+		.bxpager a:hover{
+			background-color: #00f;
+		}
+		.bxpager a.active{
+			background-color: #0f0;
+		}
+		.slider_Wrap li .text_wrap{
+			_background-color: #0f0;
+			position: absolute;width: 500px;height: 100px;
+			top: 200px;right: 100px;
+			color: #fff;
+		}
+		.slider_Wrap li .text_wrap h2{
+			font-size: 2.3em;margin-bottom: 15px;
+		}
+		.slider_Wrap li .text_wrap h2:after{content:"";display: block;
+			width: 300px;height: 2px;background-color: #f00;
+			margin-top: 15px;
+		}
+		.slider_Wrap li .text_wrap p{margin-bottom: 15px;}
+		.slider_Wrap li .text_wrap .btn{
+			width: 200px; line-height: 40px;text-align: center;
+			border: 1px solid #fff;border-radius:20px;
+			background-color: #rgba(0,0,0,0.3);font-weight: bold;
+		}
+		.slider_Wrap li .text_wrap .btn:hover{background-color: #fff;color: orange;cursor:pointer;
+		transition:0.3s;}
+		.slider_Wrap .prevBtn, .slider_Wrap .nextBtn{
+			position: absolute; top: 50%; margin-top: -50px;
+		}
+		.slider_Wrap .prevBtn{left: 10px;}
+		.slider_Wrap .nextBtn{right: 10px;}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="slider_Wrap">
+			<ul class="slider">
+				<li class='slider_view'>
+					<img src="images/main_slider01.jpg" alt="slider1">
+					<div class="text_wrap">
+						<h2>사랑과 행복을 나누는 마음1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quas.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider2">
+					<div class="text_wrap">
+						<h2>사랑과 행복을 나누는 마음2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quas.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider3">
+					<div class="text_wrap">
+						<h2>사랑과 행복을 나누는 마음3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quas.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/main_slider01.jpg" alt="slider4">
+					<div class="text_wrap">
+						<h2>사랑과 행복을 나누는 마음4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quas.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+			</ul>
+			<div class="prevBtn"><img src="images/btn_prev02.png" alt=""></div>
+			<div class="nextBtn"><img src="images/btn_next02.png" alt=""></div>
+		</div>
+		<div class="slider_pager">
+			<div class="bxpager clearfix">
+				<a href="#" data-slide-index="0">menu1</a>
+				<a href="#" data-slide-index="1">menu2</a>
+				<a href="#" data-slide-index="2">menu3</a>
+				<a href="#" data-slide-index="3">menu4</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
