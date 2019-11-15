@@ -273,7 +273,7 @@ ul.notice li p.snd{float: right;font-size:13px;}
 	margin: 0 auto;background-color: #fff;
 }
 #sub_wrap .sub01{
-	float: left;width: 25%;height: 60px;
+	float: left;width: 25%;height: 60px;border-right: 1px solid #6b6b6b;
 }
 #sub_wrap .sub01 div{
 	float: left;width: 150px;
