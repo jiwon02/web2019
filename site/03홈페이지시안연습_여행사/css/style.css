@@ -74,17 +74,5 @@
 }
 
 #sec{background-image: url(../images/bg.jpg);}
-.sec01{
-	width: 980px;height: 560px;margin: 0 auto;
-	position: relative;
-}
-.sec01 li{
-	width: 25%;height: 240px;
-	float: left;
-}
-.sec01 li:nth-child(1){
-	width: 50%;background-color: #f00;margin-bottom: 20px;
-}
-.sec01 li:nth-child(2){background-color: pink;width: 50%;height: 480px;}
-.sec01 li:nth-child(3){background-color: orange;position: absolute;top: 240px;}
-.sec01 li:nth-child(4){background-color: green;position: absolute;top: 240px;left: 240px;}
+
+
