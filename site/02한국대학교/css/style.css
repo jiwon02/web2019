@@ -11,6 +11,13 @@
 .bx-wrapper .bx-pager{
 	bottom: 30px;
 }
+
+#pager01 .bx-wrapper .bx-pager.bx-default-pager a:hover,#pager01 .bx-wrapper .bx-pager.bx-default-pager a.active,#pager01 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0044AC;
+}
+#pager02 .bx-wrapper .bx-pager.bx-default-pager a:hover,#pager02 .bx-wrapper .bx-pager.bx-default-pager a.active,#pager02 .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #FD503F;
+}
 /*common*/
 .mb10{margin-bottom: 10px !important;}
 .mb20{margin-bottom: 20px !important;}
@@ -96,6 +103,7 @@ a.btn{
 #sec_bg{
 	background-image: url(../images/mainbg01.jpg);
 	background-repeat: no-repeat;
+	padding-bottom: 50px;
 }
 #visual{
 	width: 1200px; margin: 0 auto;height: 260px;
@@ -205,7 +213,7 @@ a.btn{
 #container_wrap ul.container>li:nth-child(4) ul.notice li{
 	list-style: circle;margin-left: 20px;
 }
-ul.notice li p.fst{float: left;margin-right: 5px;}
+ul.notice li p.fst{float: left;margin-right: 5px; font-size:15px;}
 ul.notice li p.snd{float: right;font-size:13px;}
 #container_wrap ul.container>li:nth-child(5){
 	background-color: #fff;

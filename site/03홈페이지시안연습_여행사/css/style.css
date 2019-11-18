@@ -1,3 +1,90 @@
 @charset 'utf-8';
 *{font-family: 'Nanum Gothic', sans-serif;}
-#hd{background: #0c71a7 url(../images/hd_bg.png) no-repeat center;height: 90px;}
+#hd{background: #0c71a7 url(../images/hd_bg.png) no-repeat center;}
+#hd .hd_wrap{
+	width: 980px;margin: 0 auto;height: 90px;
+	position: relative;
+}
+#hd .logo{
+	position: absolute;top: 50%;margin-top: -30px;
+} 
+#hd .search{
+	width: 290px;
+	position: absolute; 
+	top: 50%; margin-top: -15px;
+	left: 50%;margin-left: -145px;
+	background-color: #fff;
+	border-radius: 15px;
+	font-size:15px;
+	text-align: center;
+	line-height: 30px;
+}
+#hd .search li{
+	float: left;
+}
+#hd .search li:nth-child(1){
+	width: 80px;font-weight: bold;color: #333d3f;
+}
+#hd .search li:nth-child(2){color: #919596;}
+#hd .search li:nth-child(3){
+	float: right;
+	padding-top: 5px;padding-right: 10px;
+}
+#hd .hd_wrap>p{
+	position: absolute; right: 115px; top: 50%; margin-top: -16px;
+	color: #fff; font-size:20px;padding-right: 20px;
+}
+#hd .SNS{
+	width: 115px;height: 25px;
+	position: absolute;right: 0;top: 50%;margin-top: -12.5px;
+	text-indent: -9999px;
+}
+#hd .SNS li{
+	float: left;
+	background-image: url(../images/sns_icon01.png);
+	width: 24px;height: 24px;
+	margin-right: 6.33px;
+}
+#hd .SNS li:nth-child(1){background-position: -2px 0px;}
+#hd .SNS li:nth-child(2){background-position: -122px 0px;}
+#hd .SNS li:nth-child(3){background-position: -32px -56px;}
+#hd .SNS li:nth-child(4){background-position: -123px -28px; margin-right: 0;}
+
+#hd_menu{
+	background-color: #f9f9f9;
+	border-bottom: 5px solid #0e73a7;
+}
+#hd_menu .main_menu{
+	width: 980px;margin: 0 auto;
+}
+#hd_menu .main_menu li{
+	float: left;width: 163.3333px;
+	border-right: 1px solid #ddd;
+}
+#hd_menu .main_menu li:first-child{border-left: 1px solid #ddd;}
+#hd_menu .main_menu a{
+	display: block;
+	text-align: center;
+	line-height: 65px;
+	font-weight: bold; font-size:20px;
+}
+#hd_menu .main_menu li:nth-child(4){position: relative;}
+#hd_menu .main_menu li:nth-child(4) img{
+	position: absolute;top: 20px;right: 25px;
+}
+
+#sec{background-image: url(../images/bg.jpg);}
+.sec01{
+	width: 980px;height: 560px;margin: 0 auto;
+	position: relative;
+}
+.sec01 li{
+	width: 25%;height: 240px;
+	float: left;
+}
+.sec01 li:nth-child(1){
+	width: 50%;background-color: #f00;margin-bottom: 20px;
+}
+.sec01 li:nth-child(2){background-color: pink;width: 50%;height: 480px;}
+.sec01 li:nth-child(3){background-color: orange;position: absolute;top: 240px;}
+.sec01 li:nth-child(4){background-color: green;position: absolute;top: 240px;left: 240px;}
