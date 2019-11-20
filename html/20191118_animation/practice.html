@@ -128,5 +128,45 @@
 			</div>
 		</div>
 	</div>
+
+<style>
+	.box_wrap{
+		width: 200px;height: 200px;
+		background-color: green;
+		position: relative; left: 200px;top: 50px;
+	}
+	.box1{
+		width: 200px;height: 200px;
+		background-color: yellow;
+		transition:0.3s;
+	}
+	.box_wrap:hover .box1{
+		transform:rotate(-30deg);
+	}
+	.box2{
+		width: 200px;height: 200px;
+		background-color: orange;
+		transition:0.3s;
+		position: absolute;top: 0;
+	}
+	.box_wrap:hover .box2{
+		transform:rotate(-20deg);
+	}
+	.box3{
+		width: 200px;height: 200px;
+		background-color: blue;
+		transition:0.3s;
+		position: absolute;top: 0;
+	}
+	.box_wrap:hover .box3{
+		transform:rotate(-10deg);
+	}
+</style>	
+
+	<div class="box_wrap">
+		<div class="box1">테스트</div>
+		<div class="box2">테스트</div>
+		<div class="box3">테스트</div>
+	</div>
 </body>
 </html>

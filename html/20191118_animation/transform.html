@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{background-image: url(../images/bg_grid.gif);}
+		div{
+			width: 200px;height: 100px;background-color: yellow;
+		}
+		.box2{
+			transform:translate(100px,50px) scale(1,1) rotate(0);
+			transition:0.3s;
+		}
+		.box2:hover{
+			transform:translate(150px,100px) scale(1.2,1.2) rotate(30deg);
+		}
+
+		.box_wrap{
+			width: 200px;height: 200px;background-color: green;
+			position: relative;left: 200px;top: 100px;
+			_overflow:hidden;
+		}	
+		.box_wrap .box{
+			width: 200px;height: 200px;
+			transition:0.3s;
+			/*transform-origin:*//*left top*//*100% 0;*/
+		}
+		.box_wrap .box1{
+			width: 200px;height: 200px;
+			transition:0.2s;
+			background-color: orange;
+			position: absolute;top: 0;
+		}
+		.box_wrap .box02{
+			width: 200px;height: 200px;
+			transition:0.1s;
+			background-color: blue;
+			position: absolute;top: 0;
+		}
+		.box_wrap:hover .box{
+			transform: /*translate(0,0)*/ rotate(-30deg) /*scale(0.7,0.7)*/;
+			 ;
+		}
+		.box_wrap:hover .box1{
+			transform:rotate(-20deg);
+			 ;
+		}
+		.box_wrap:hover .box02{
+			transform:rotate(-10deg);
+			 ;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		박스1
+	</div>
+	<div class="box2">박스2</div>
+
+	<div class="box_wrap">
+		<div class="box">테스트</div>
+		<div class="box1">테스트</div>
+		<div class="box02">테스트</div>
+	</div>
+
+
+</body>
+</html>
