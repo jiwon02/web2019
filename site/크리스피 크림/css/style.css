@@ -11,41 +11,72 @@
 .bx-wrapper .bx-pager{
 	bottom: 30px;
 }
+header{height: 1955px;position: relative;}
 #main_wrap{
 	position:fixed;z-index:1;
 	top: 40px;left: 50%;margin-left: -632.5px;
 	
 }
 #main_wrap .menu_wrap{
-	width: 1265px;height: 50px;
-	background-color: skyblue;
+	width: 1260px;height: 70px;
 	position: relative;
+	background-image: url(../images/menu_bar.png);
 }
 #main_wrap .logo{
-	position: absolute;left: 0;
+	position: absolute;left: 20px;top: 50%;margin-top: -25px;	
 }
 #main_wrap .menu{
-	position: absolute;right: 100px;
-	background-color: #ddd;
-	margin-right: 30px;
+	position: absolute;right: 115px;top: 50%;margin-top: -25px;
 }
 #main_wrap .menu li{
-	float: left;width: 120px; 
+	float: left; 
 }
 #main_wrap .menu a{
 	display: block;
 	text-align: center;
 	line-height: 50px;
+	font-weight: bold;
+	font-size:20px;
+	color: #3D2E06;
+	padding:0 20px;
+}
+#main_wrap .menu a:hover p{
+	border-top: 3px solid #0F4A38;
+	color: #0F4A38;
+	font-size:21px;
 }
 #main_wrap .language{
-	position: absolute;right: 0;
+	position: absolute;right: 10px;top: 50%;margin-top: -25px;
+	color: #3D2E06;
 }
 #main_wrap .language>div{
 	width: 50px;height: 50px; 
-	border: 1px solid #b8307c;
+	border: 1px solid #298868;
 	text-align: center;line-height: 50px;
 	float: left;
 }
-#hd_wrap .slider01{
-	height: 1470px;
+#main_wrap .language>div:hover{background-color: #298868;color: #E8E3DD;}
+#hd_wrap .slider01 img{height: 1010px;}
+
+#container{
+	width: 1260px;margin: 0 auto;
+	position: absolute;bottom: 0px;left: 50%;margin-left: -630px;
 }
+#container li{
+	float: left;width: 25%;height: 315px;
+}
+#container li:nth-child(1){background-color: #ddd;}
+#container li:nth-child(2){background-color: pink;}
+#container li:nth-child(3){background-color: skyblue;
+	width: 50%;}
+#container li:nth-child(4){background-color: orange;}
+#container li:nth-child(5){background-color: green;}
+#container li:nth-child(6){background-color: beige;
+	width: 50%;}
+#container li:nth-child(7){background-color: #ddd;
+	height: 630px;}
+#container li:nth-child(8){background-color: pink;
+	width: 50%;}
+#container li:nth-child(9){background-color: skyblue;}
+#container li:nth-child(10){background-color: green;}
+#container li:nth-child(11){background-color: orange;width: 50%;}
