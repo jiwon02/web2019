@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/practice.css">
+</head>
+<body>
+	<div id="wrap">
+		<header id="hd">
+			<h1><a href="#">naver</a></h1>
+		</header>
+		<div id="container">
+			<h2 class='blind'>네이버 회원가입</h2>
+			<form action="#" method="post">
+				<fieldset>
+					<legend class='blind'>아이디,비밀번호</legend>
+					<p class="field">
+						<label for="user-id" class='blind'>아이디</label>
+						<input type="text" id='user-id' placeholder="아이디" name='usereid' class='inp-field'>
+						<span class='ico mail'>@naver.com</span>
+					</p>
+
+					<p class="field">
+						<label for="user-pw" class="blind">비밀번호</label>
+						<input type="text" id='user-pw' placeholder="비밀번호" name='userpw' class="inp-field">
+						<span class="ico pass"></span>
+					</p>
+
+					<p class="field">
+						<label for="user-pw2" class='blind'>비밀번호 확인</label>
+						<input type="text" id='user-pw2' placeholder="비밀번호 확인" name=userpw2 class='inp-field'>
+						<span class='ico pass2'></span>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>회원정보</legend>
+						<p class="field">
+							<label for="name" class="blind">이름</label>
+							<input type="text" id='name' placeholder="이름" name='name' class="inp-field w458">
+						</p>
+						<p class="field radio">
+							<label for="female" class='female'>여성</label>
+							<input type="radio" id='female' name="user-s" value='female'>
+
+							<label for="male" class='male'>남성</label>
+							<input type="radio" id='male' name='user-s' value='male'>
+						</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

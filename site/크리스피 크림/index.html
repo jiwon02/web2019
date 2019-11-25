@@ -12,8 +12,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider01").bxSlider({
-				auto:true
+			var Slider01 = $(".slider01").bxSlider({
+				auto:true,
+				controls:false,
+			});
+			$(".preBtn").click(function(){
+				Slider01.goToPrevSlide();
+			});
+			$(".nextBtn").click(function(){
+				Slider01.goToNextSlide();
 			});
 		});
 	</script>
@@ -38,25 +45,36 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider01">
-				<img src="images/slider_01.png" alt="">
-				<img src="images/slider_02.png" alt="">
-				<img src="images/slider_03.png" alt="">
+			<div class="slider01_wrap">
+				<div class="slider01">
+					<img src="images/slider_01.png" alt="">
+					<img src="images/slider_02.png" alt="">
+					<img src="images/slider_03.png" alt="">
+				</div>
+				<div class="preBtn"><img src="images/btn_prev02.png" alt=""></div>
+				<div class="nextBtn"><img src="images/btn_next02.png" alt=""></div>
 			</div>
 		</div>
 		<div id="container">
 			<ul class="clearfix">
+				<li><a href="#">
+					<div class="card">
+						<img src="images/new_icon.png" alt="">
+						<div class="card-title">
+							신제품
+						</div>
+					</div>
+				</a></li>
+				<li><a href="#"></a></li>
+				<li class='double'><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
+				<li class='double'><a href="#"></a></li>
+				<li class='hdouble'><a href="#"></a></li>
+				<li class='double'><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
+				<li class='double'><a href="#"></a></li>
 			</ul>
 		</div>
 	</header>
