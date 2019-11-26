@@ -71,6 +71,57 @@ body{background-color: #cdcdcd;}
 .container .field.radio .female{left: 15px;}
 .container .field.radio .male{right: 15px;}
 
+.container .field.birth label{
+	/*display: block; float:left 사용하므로 굳이 필요x;*/
+	float: left;
+	width: 53px;line-height: 49px;
+	background-color: #aaa;
+	text-align: center;
+}
+.container .field.birth input,
+.container .field.confirm input
+{float: left;}
+.container .field.birth .field-wall,
+.container .field.confirm .field-wall
+{
+	float: left;
+	width: 0; height: 29px;
+	border-right: 1px solid #aaa;
+	margin-top: 10px;
+	text-indent: -9999px;
+}
+.container .field.birth select,
+.container .field.confirm select
+{
+	float: left;
+	width: 110px;height: 29px;
+	font-size:15px;
+	border:0 none;
+	margin-top: 10px;
+	margin-left: 10px;margin-right: 7px;
+	background: url(../images/sel_arr.gif) no-repeat 100% center/*50%*/;
+	-webkit-appearance:none;
+}
+.container .field.confirm .btn-click{
+	width: 99px;height: 31px;
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	color: #333;
+	margin-top: 9px;margin-left: 10px;
+	cursor: pointer;
+}
 
+.container .btn_area{}
+.container .btn_area .btn_submit{
+	width: 100%;height: 59px;
+	background: #1fbc02 url(../images/btn_join2.gif) no-repeat 50% -3px;
+	border: 1px solid #1fbc02;
+	border-radius: 5px;
+	text-indent: -9999px;
+}
 
 .w458{width: 458px !important;}
+.w130{width: 130px !important;}
+.w145{width: 145px !important;}
+.w205{width: 205px !important;}
+.w330{width: 330px !important;}
