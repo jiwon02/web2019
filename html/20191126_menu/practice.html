@@ -31,7 +31,45 @@
 			padding: 3px 0;
 		}
 
-		.visual{height: 400px;background-color: #ddd;}
+		.visual{height: 200px;background-color: #ddd;}
+
+		.menu01{
+			width: 1000px;margin: 0 auto;height: 35px;
+			background-color: orange;
+			position: relative;
+		}
+		.menu01>ul>li{
+			float: left;width: 20%;
+		}
+		.menu01>ul>li:hover{background-color: skyblue;}
+		.menu01>ul>li:hover .submenu01{display: block;}
+		.menu01>ul>li>a{
+			display: block;
+			line-height: 35px;
+			text-align: center;
+		}
+		.submenu01{display: none;position: absolute;left: 0;width: 100%;background-color: green;}
+		.submenu01 li{float: left;width: 80px;}
+		.submenu01 li a{display: block; padding: 0 10px;line-height: 40px;}
+		.visual{height: 200px;background-color: #ddd;}
+
+		.wrap{width: 1000px;margin: 0 auto;background-color: #ddd;position: relative;}
+		.menu02{
+			width: 200px;
+			background-color: orange;
+		}
+		.menu02>ul>li:hover{background-color: skyblue;}
+		.menu02>ul>li:hover .submenu02{display: block;}
+		.menu02>ul>li>a{
+			display: block;
+			line-height: 35px;
+			text-align: center;
+		}
+		
+		.submenu02{display: none;position: absolute;left: 200px;top: 0;}
+		.submenu02 li{width: 150px;background-color: skyblue;}
+		.submenu02 a{display: block;text-align: center;line-height: 35px;}
+
 	</style>
 </head>
 <body>
@@ -84,8 +122,108 @@
 			</li>
 		</ul>
 	</div>
-	<div class="visual">
-		
+	<div class="visual"></div>
+	<div class="menu01">
+		<ul class='clearfix'>
+			<li>
+				<a href="#">menu1</a>
+				<ul class="submenu01 clearfix">
+					<li><a href="#">sub11</a></li>
+					<li><a href="#">sub12</a></li>
+					<li><a href="#">sub13</a></li>
+					<li><a href="#">sub14</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">menu2</a>
+				<ul class="submenu01 clearfix" style='padding-left: 150px'>
+					<li><a href="#">sub21</a></li>
+					<li><a href="#">sub22</a></li>
+					<li><a href="#">sub23</a></li>
+					<li><a href="#">sub24</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">menu3</a>
+				<ul class="submenu01 clearfix" style='padding-left: 350px'>
+					<li><a href="#">sub31</a></li>
+					<li><a href="#">sub32</a></li>
+					<li><a href="#">sub33</a></li>
+					<li><a href="#">sub34</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">menu4</a>
+				<ul class="submenu01 clearfix" style='padding-left: 550px'>
+					<li><a href="#">sub41</a></li>
+					<li><a href="#">sub42</a></li>
+					<li><a href="#">sub43</a></li>
+					<li><a href="#">sub44</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">menu5</a>
+				<ul class="submenu01 clearfix" style='padding-left: 670px'>
+					<li><a href="#">sub51</a></li>
+					<li><a href="#">sub52</a></li>
+					<li><a href="#">sub53</a></li>
+					<li><a href="#">sub54</a></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
+	<div class="visual"></div>
+	<div class="wrap">
+		<div class="menu02">
+			<ul class='clearfix'>
+				<li>
+					<a href="#">menu1</a>
+					<ul class="submenu02 clearfix">
+						<li><a href="#">sub11</a></li>
+						<li><a href="#">sub12</a></li>
+						<li><a href="#">sub13</a></li>
+						<li><a href="#">sub14</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">menu2</a>
+					<ul class="submenu02 clearfix" style='padding-top: 10px'>
+						<li><a href="#">sub21</a></li>
+						<li><a href="#">sub22</a></li>
+						<li><a href="#">sub23</a></li>
+						<li><a href="#">sub24</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">menu3</a>
+					<ul class="submenu02 clearfix" style='padding-top: 20px;'>
+						<li><a href="#">sub31</a></li>
+						<li><a href="#">sub32</a></li>
+						<li><a href="#">sub33</a></li>
+						<li><a href="#">sub34</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">menu4</a>
+					<ul class="submenu02 clearfix" style='padding-top: 30px;'>
+						<li><a href="#">sub41</a></li>
+						<li><a href="#">sub42</a></li>
+						<li><a href="#">sub43</a></li>
+						<li><a href="#">sub44</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">menu5</a>
+					<ul class="submenu02 clearfix" style="padding-top: 35px;">
+						<li><a href="#">sub51</a></li>
+						<li><a href="#">sub52</a></li>
+						<li><a href="#">sub53</a></li>
+						<li><a href="#">sub54</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 </body>
 </html>

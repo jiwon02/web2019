@@ -102,14 +102,24 @@ header{height: 1955px;position: relative;}
 }
 #container .card_double{
 	color:#fff;
-	padding-top: 45px;padding-left: 40px;
+	padding-top: 50px;padding-left: 40px;
 }
 #container .card_double h2:after{
 	content:"";display: block;
 	width: 55px;height: 2px;background-color: #fff;
-	margin-top: 15px;
+	margin-top: 20px;
+}
+#container .card_hdouble{
+	color:#fff;
+	padding-top: 50px;padding-left: 40px;
+}
+#container .card_hdouble h2:after{
+	content:"";display: block;
+	width: 55px;height: 2px;background-color: #fff;
+	margin-top: 20px;
 }
 
+#container h1{font-size:1.8em;}
 #container li:nth-child(1){background-color: #ddd;}
 #container li:nth-child(2){background:url(../images/new.png) no-repeat;}
 #container li:nth-child(3){background-color: skyblue;}
@@ -127,8 +137,9 @@ header{height: 1955px;position: relative;}
 #container li:nth-child(4){background-color: orange;}
 #container li:nth-child(5){background-color: green;}
 #container li:nth-child(6){background:url(../images/brandstory_bg.png) no-repeat;}
-#container li:nth-child(7){background-color: #ddd;}
-#container li:nth-child(8){background-color: pink;}
+#container li:nth-child(7){background:url(../images/history.png);}
+#container li:nth-child(8){background: url(../images/homeservice.png) no-repeat;}
+#container li:nth-child(8) .card_double h2:after{content:"";background-color: #3D2E06;}
 #container li:nth-child(9){background-color: skyblue;}
 #container li:nth-child(10){background-color: green;}
 #container li:nth-child(11){background-color: orange;}
