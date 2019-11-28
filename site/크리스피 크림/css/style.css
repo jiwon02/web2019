@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{font-family: 'Nanum Gothic', sans-serif;}
-.mb20{margin-bottom: 20px;}
+.mb20{margin-bottom: 20px !important;}
 .bx-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -12,10 +12,12 @@
 .bx-wrapper .bx-pager{
 	bottom: 345px;
 }
-header{height: 1955px;position: relative;}
+
+
+header{height: 1955px;position: relative;margin-bottom: 30px;}
 #main_wrap{
 	position:fixed;z-index:1;
-	top: 40px;left: 50%;margin-left: -632.5px;
+	top: 40px;left: 50%;margin-left: -630px;
 	
 }
 #main_wrap .menu_wrap{
@@ -102,7 +104,7 @@ header{height: 1955px;position: relative;}
 }
 #container .card_double{
 	color:#fff;
-	padding-top: 50px;padding-left: 40px;
+	padding-top: 50px;padding-left: 35px;
 }
 #container .card_double h2:after{
 	content:"";display: block;
@@ -111,7 +113,7 @@ header{height: 1955px;position: relative;}
 }
 #container .card_hdouble{
 	color:#fff;
-	padding-top: 50px;padding-left: 40px;
+	padding-top: 50px;padding-left: 35px;
 }
 #container .card_hdouble h2:after{
 	content:"";display: block;
@@ -120,27 +122,72 @@ header{height: 1955px;position: relative;}
 }
 
 #container h1{font-size:1.8em;}
-#container li:nth-child(1){background-color: #ddd;}
+#container li:nth-child(1){background-color: #A3E3FF;}
 #container li:nth-child(2){background:url(../images/new.png) no-repeat;}
-#container li:nth-child(3){background-color: skyblue;}
-#container li:nth-child(3)>div{float: left;width: 50%;}
-/*#container .event01{padding-top: 40px;padding-left: 40px;}
-#container .event01:after{
-	content:"";
-	display: block;
-	border-style: solid;
-	border-width: 25px;
-	border-color: transparent transparent transparent #fff;
-}
-#container .event01 h3{font-size:20px;}*/
 
-#container li:nth-child(4){background-color: orange;}
-#container li:nth-child(5){background-color: green;}
+#container li:nth-child(3){background-color: #fff;position: relative;}
+#container li:nth-child(3) h2{position: absolute;top: 45px;left: 35px;}
+#container .slider02_txt{float: left;width: 50%;height: 315px;position: relative;}
+#container .slider02_txt:after{content:"";display: block;
+	border-width: 20px;border-style: solid;border-color: transparent transparent transparent #fff;
+	position: absolute;left:315px;top: 50%;	margin-top: -20px;
+}
+#container .slider02_txt p{
+	position: absolute;top: 85px;left: 35px;
+}
+#container .preBtn02{
+	position: absolute; bottom: 45px;right: 65px;
+}
+#container .nextBtn02{
+	position: absolute;bottom: 45px;right: 35px;
+}
+#container .slider02 .slider02_img{float: left;width: 50%;height: 315px;}
+
+
+#container li:nth-child(4){background-color: #F2A2C8;}
+#container li:nth-child(5){background-color: #BF8C6F;}
 #container li:nth-child(6){background:url(../images/brandstory_bg.png) no-repeat;}
 #container li:nth-child(7){background:url(../images/history.png);}
 #container li:nth-child(8){background: url(../images/homeservice.png) no-repeat;}
 #container li:nth-child(8) .card_double h2:after{content:"";background-color: #3D2E06;}
-#container li:nth-child(9){background-color: skyblue;}
-#container li:nth-child(10){background-color: green;}
-#container li:nth-child(11){background-color: orange;}
+#container li:nth-child(9){background-color: #FE8480;}
+#container li:nth-child(10){background-color: #590202;}
+#container li:nth-child(11){overflow: hidden;}
+#container li:nth-child(11):hover img{transform: scale(1.1,1.1);transition:0.5s;}
 
+section{height: 700px;
+		background: url(../../04회사/images/contentsbg01.jpg) no-repeat center;
+		background-attachment:fixed; /*모바일 사용 x*/
+		background-size: cover;
+	}
+#contents{width: 1260px;margin: 0 auto;padding-top: 70px;}
+#contents h4{text-align: center;color: white;}
+#contents h4:after{content:'';display: block;
+	width: 70px;height: 2px;background-color: #fff;
+	margin: 10px auto;
+}
+#contents>p{text-align: center;color: white;margin-bottom: 70px;}
+#contents li{
+	float: left;margin-right: 20px;
+	transition:0.3s;
+}
+#contents li:last-child{margin-right: 0px;}
+#contents li:hover{
+	box-shadow: 5px 5px 10px rgba(255,255,255,0.5),7px 7px 10px red;
+	transform:translate(-10px, -10px);
+	border-radius: 5px
+}
+#contents .card{
+	width: 300px;height: 380px;
+	background-color: #fff;border-radius: 5px;
+	padding-top: 50px;
+}
+#contents .card img{margin: 0 auto;}
+#contents .card-body{
+	text-align: center;
+	padding: 20px;
+}
+#contents .card-title{
+	font-size:15px;font-weight: bold;
+	margin-bottom: 10px;
+}

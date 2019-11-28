@@ -6,8 +6,12 @@
 	<title>krispykreme</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script>
@@ -22,7 +26,26 @@
 			$(".nextBtn").click(function(){
 				Slider01.goToNextSlide();
 			});
+			var Slider02 = $(".slider02").bxSlider({
+				auto:true,
+				autoDirection:"prev",
+				pager:false,
+				controls:false,
+			});
+			$(".preBtn02").click(function(){
+				Slider02.goToPrevSlide();
+			});
+			$(".nextBtn02").click(function(){
+				Slider02.goToNextSlide();
+			});
+			$(".video").colorbox({
+			iframe:true,
+			innerWidth:"560px",
+			innerHeight:"315px"
+			});
 		});
+		new WOW().init();
+		
 	</script>
 </head>
 <body>
@@ -82,76 +105,139 @@
 		</div>
 		<div id="container">
 			<ul class="clearfix">
-				<li><a href="#">
+				<li class='wow fadeInUp' onclick="location.href='#'">
 					<div class="card">
 						<img class="mb20" src="images/new_icon.png" alt="">
 						<div class="card-title">
 							신제품
 						</div>
 					</div>
-				</a></li>
-				<li><a href="#"></a></li>
-				<li class='double clearfix'><a href="#"></a>
-					<div class="slider02_txt">
-						<p>Sweet Sharing<br>달콤한 수요일<br>오리지널 글레이즈드<br>하프더즌 1+1 </p>
-					</div>
-					<div class="slider02_img">
-						<img src="images/event02.png" alt="">
-					</div>
 				</li>
-				<li><a href="#">
+				<li class='wow fadeInUp' data-wow-delay='0.2s' onclick="location.href='#'"></li>
+				<li class='double clearfix wow fadeInUp' data-wow-delay='0.4s'>
+					<div class="slider02">
+						<div class="slider02_wrap clearfix">
+							<div class="slider02_txt">
+								<p>Sweet Sharing<br>달콤한 수요일<br>오리지널 글레이즈드<br>하프더즌 1+1 </p>
+								<img src="images/prev02.png" alt="" class="preBtn02">
+								<img src="images/next02.png" alt="" class="nextBtn02">	
+							</div>
+							<img class='slider02_img' src="images/event01.png" alt="">
+						</div>
+						<div class="slider02_wrap clearfix">
+							<div class="slider02_txt">
+								<p>크리스마스 더즌 및<br>스마일퍼피 도넛 구매시<br>100원이 기부됩니다.<br>추운 겨울을 나고 있는<br>유기 동물들에게...</p>
+								<img src="images/prev02.png" alt="" class="preBtn02">
+								<img src="images/next02.png" alt="" class="nextBtn02">
+							</div>
+							<img class='slider02_img' src="images/kara02.png" alt="">
+						</div>
+					</div>
+					<h2>EVENT</h2>
+					
+				</li>
+				<li class='wow fadeInUp' onclick="location.href='#'">
 					<div class="card">
 						<img class="mb20" src="images/donut_icon.png" alt="">
 						<div class="card-title">
 							도넛
 						</div>
 					</div>
-				</a></li>
-				<li><a href="#">
+				</li>
+				<li class='wow fadeInUp' data-wow-delay='0.2s' onclick="location.href='#'">
 					<div class="card">
 						<img class="mb20" src="images/coffee_icon.png" alt="">
 						<div class="card-title">
 							커피/음료
 						</div>
 					</div>
-				</a></li>
-				<li class='double'><a href="#">
+				</li>
+				<li class='double wow fadeInUp' data-wow-delay='0.4s' onclick="location.href='#'">
 					<div class="card_double">
 						<h2 class='mb20'>Brand Story</h2>
 						<h1>여러분들께 드리는<br>최고의 선물입니다.</h1>
 					</div>
-				</a></li>
-				<li class='hdouble'><a href="#">
+				</li>
+				<li class='hdouble wow fadeInUp' data-wow-delay='0.2s' onclick="location.href='#'">
 					<div class="card_hdouble">
 						<h2 class='mb20'>History</h2>
 						<h1>따뜻하고 달콤한<br>76년의 이야기가<br>펼쳐집니다.</h1>
 					</div>
-				</a></li>
-				<li class='double'><a href="#">
+				</li>
+				<li class='double wow fadeInUp' data-wow-delay='0.4s' onclick="location.href='#'">
 					<div class="card_double" style='color: #3D2E06;'>
 						<h2 class='mb20'>홈서비스</h2>
 						<h1>집,사무실,학교에서<br>더욱 편리하게<br>즐겨보세요!</h1>
 					</div>
-				</a></li>
-				<li><a href="#">
+				</li>
+				<li class='wow fadeInUp' data-wow-delay='0.6s' onclick="location.href='#'">
 					<div class="card">
 						<img class="mb20" src="images/love_icon.png" alt="">
 						<div class="card-title">
 							사회 공헌 활동
 						</div>
 					</div>
-				</a></li>
-				<li><a href="#">
+				</li>
+				<li class='wow fadeInUp' onclick="location.href='#'">
 					<div class="card">
 						<img class="mb20" src="images/the_icon.png" alt="">
 						<div class="card-title">
 							도넛극장
 						</div>
 					</div>
-				</a></li>
-				<li class='double'><a href="#"></a></li>
+				</li>
+				<li class='double wow fadeInUp' data-wow-delay='0.2s'>
+					<a  class='video' href="https://www.youtube.com/embed/1K7VG67pAbg" title="도넛교실">
+						<img src="images/video01.png" alt="">
+					</a>
+				</li>
 			</ul>
 		</div>
 	</header>
+	<section>
+		<div id="contents">
+			<h4>비전</h4>
+			<p>mision 2020</p>
+			<ul class='clearfix'>
+				<li onclick="location.href='#'">
+					<div class="card">
+						<img src="images/donut_icon.png" alt="donut">
+						<div class="card-body">
+							<p class="card-title">new donut</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+						</div>
+					</div>
+				</li>
+				<li onclick="location.href='#'">
+					<div class="card">
+						<img src="images/donut_icon.png" alt="donut">
+						<div class="card-body">
+							<p class="card-title">new donut</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+						</div>
+					</div>
+				</li>
+				<li onclick="location.href='#'">
+					<div class="card">
+						<img src="images/donut_icon.png" alt="donut">
+						<div class="card-body">
+							<p class="card-title">new donut</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+						</div>
+					</div>
+				</li>
+				<li onclick="location.href='#'">
+					<div class="card">
+						<img src="images/donut_icon.png" alt="donut">
+						<div class="card-body">
+							<p class="card-title">new donut</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ipsum.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style='height: 700px;'></div>
+	</section>
 </body>
 </html>
