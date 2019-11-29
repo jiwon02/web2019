@@ -14,7 +14,7 @@
 }
 
 
-header{height: 1955px;position: relative;margin-bottom: 30px;}
+header{height: 1955px;position: relative;margin-bottom: 80px;}
 #main_wrap{
 	position:fixed;z-index:1;
 	top: 40px;left: 50%;margin-left: -630px;
@@ -136,10 +136,10 @@ header{height: 1955px;position: relative;margin-bottom: 30px;}
 	position: absolute;top: 85px;left: 35px;
 }
 #container .preBtn02{
-	position: absolute; bottom: 45px;right: 65px;
+	position: absolute; bottom: 45px;right: 380px;
 }
 #container .nextBtn02{
-	position: absolute;bottom: 45px;right: 35px;
+	position: absolute;bottom: 45px;right: 350px;
 }
 #container .slider02 .slider02_img{float: left;width: 50%;height: 315px;}
 
@@ -156,30 +156,30 @@ header{height: 1955px;position: relative;margin-bottom: 30px;}
 #container li:nth-child(11):hover img{transform: scale(1.1,1.1);transition:0.5s;}
 
 section{height: 700px;
-		background: url(../../04회사/images/contentsbg01.jpg) no-repeat center;
+		background: url(../images/section_bg01.jpg) no-repeat center;
 		background-attachment:fixed; /*모바일 사용 x*/
 		background-size: cover;
 	}
-#contents{width: 1260px;margin: 0 auto;padding-top: 70px;}
-#contents h4{text-align: center;color: white;}
-#contents h4:after{content:'';display: block;
-	width: 70px;height: 2px;background-color: #fff;
+#contents{width: 1260px;margin: 0 auto;padding-top: 70px;color: #3D2E06;}
+#contents h2{text-align: center;}
+#contents h2:after{content:'';display: block;
+	width: 70px;height: 2px;background-color: #3D2E06;
 	margin: 10px auto;
 }
-#contents>p{text-align: center;color: white;margin-bottom: 70px;}
+#contents>p{text-align: center;margin-bottom: 70px;}
 #contents li{
 	float: left;margin-right: 20px;
 	transition:0.3s;
 }
 #contents li:last-child{margin-right: 0px;}
 #contents li:hover{
-	box-shadow: 5px 5px 10px rgba(255,255,255,0.5),7px 7px 10px red;
+	box-shadow: 7px 7px 10px rgba(211,17,69,0.7);
 	transform:translate(-10px, -10px);
 	border-radius: 5px
 }
 #contents .card{
 	width: 300px;height: 380px;
-	background-color: #fff;border-radius: 5px;
+	background:url(../images/sec_card.gif);border-radius: 5px;
 	padding-top: 50px;
 }
 #contents .card img{margin: 0 auto;}
@@ -188,6 +188,10 @@ section{height: 700px;
 	padding: 20px;
 }
 #contents .card-title{
-	font-size:15px;font-weight: bold;
-	margin-bottom: 10px;
+	font-size:20px;font-weight: bold;
 }
+
+
+#sec02{width: 1260px;margin: 0 auto;padding-top: 80px;}
+#sec02 .sns>ul>li{float: left;width: 315px;height: 630px;
+	background-color: #000;}
