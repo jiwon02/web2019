@@ -12,7 +12,16 @@
 .bx-wrapper .bx-pager{
 	bottom: 345px;
 }
-
+.aBtn{
+	width: 202px;
+	background: url(../images/dbtn.png) no-repeat center;
+}
+.aBtn a{
+	display: block;
+	text-align: center;line-height: 40px;
+	color: #fff; font-weight: bold;
+	padding-left: 20px;
+}
 
 header{height: 1955px;position: relative;margin-bottom: 80px;}
 #main_wrap{
@@ -94,7 +103,8 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 }
 .double{width: 50% !important;}
 .hdouble{height: 630px !important;}
-#container .card{
+#container .card,
+.job .card{
 	position: absolute;
 	top: 50%;margin-top: -96.5px;
 	left: 50%;margin-left: -75px;
@@ -102,11 +112,13 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 	color: #fff ;
 	text-align: center;
 }
-#container .card_double{
+#container .card_double,
+.job .card_double{
 	color:#fff;
 	padding-top: 50px;padding-left: 35px;
 }
-#container .card_double h2:after{
+#container .card_double h2:after,
+.job .card_double h2:after{
 	content:"";display: block;
 	width: 55px;height: 2px;background-color: #fff;
 	margin-top: 20px;
@@ -193,5 +205,48 @@ section{height: 700px;
 
 
 #sec02{width: 1260px;margin: 0 auto;padding-top: 80px;}
-#sec02 .sns>ul>li{float: left;width: 315px;height: 630px;
-	background-color: #000;}
+#sec02 .sns01{float: left;
+	width: 315px;height: 630px;
+	background-color: #39180F;
+}
+#sec02 .sns{margin-bottom: 80px;}
+#sec02 .sns_img{
+	width: 315px;height: 315px;
+	position: relative;
+}
+#sec02 .sns_img h1{position: absolute;
+	top: 235px;left: 50%;margin-left: -29.08px;
+	color: #fff;
+}
+#sec02 .sns_img img{margin: 0 auto;padding-top: 100px;}
+#sec02 .sns_txt{padding-left: 35px;color: #fff;}
+#sec02 .sns02{float: left;
+	width: 945px;height: 630px;background-color: beige;
+	position: relative;
+}
+#sec02 .sns02 li{float: left;width: 315px;}
+#sec02 .sns_card .card-txt,
+#sec02 .sns_card .card-Htxt{
+	background-color: #FFFCE3;
+	height: 315px;width: 315px;
+	padding: 50px 45px;
+	position: relative;
+	color: #3D2E06;
+}
+#sec02 .sns_card .card-txt:after{content:"";display: block;
+	border-width: 20px;border-style: solid;border-color: transparent transparent #FFFCE3 transparent;
+	position: absolute;left: 50%;margin-left: -20px;top: -40px;
+
+}
+#sec02 .sns_card .card-txt img,
+#sec02 .sns_card .card-Htxt img{position: absolute;bottom: 60px;right: 45px;}
+#sec02 .sns_card .card-Htxt:after{content:"";display: block;
+	border-width: 20px;border-style: solid;border-color:#FFFCE3 transparent transparent transparent;
+	position: absolute;left: 50%;margin-left: -20px;bottom: -40px;
+}
+#sec02 .preBtn03,
+#sec02 .nextBtn03{position: absolute;bottom: 50px;}
+#sec02 .preBtn03{left: -100px;}
+#sec02 .nextBtn03{left: -70px;}
+#sec02 .job{width: 1260px;margin: 0 auto;}
+#sec02 .job li{float: left;background-color: skyblue;}

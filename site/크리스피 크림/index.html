@@ -43,6 +43,18 @@
 			innerWidth:"560px",
 			innerHeight:"315px"
 			});
+			var Slider03 = $(".slider03").bxSlider({
+				auto:true,
+				mode:"fade",
+				controls:false,
+				pager:false
+			});
+			$(".preBtn03").click(function(){
+				Slider03.goToPrevSlide();
+			});
+			$(".nextBtn03").click(function(){
+				Slider03.goToNextSlide();
+			});
 		});
 		new WOW().init();
 		
@@ -236,17 +248,118 @@
 		</div>
 	</section>
 	<div id="sec02">
-		<div class="sns">
-			<ul class='clearfix'>
-				<li>
+		<div class="sns clearfix">
+			<div class='sns01'>
+				<div class="sns_img">
 					<h1>SNS</h1>
-					
+					<img src="images/insta.png" alt="">
+				</div>
+				<div class="sns_txt">
+				당신의 설레는 처음,<br>행복한 시간,<br>그리고 특별한 순간을<br>달콤한 도넛과 함께 하세요.<br>당신의 모든 날, 크리스피 크림이<br>함께 합니다.
+				<br><br><br>2020.11.04
+				</div>	
+			</div>
+			<div class="sns02">
+				<div class="slider03">
+					<ul class='clearfix'>
+						<li>
+						 	<div class="sns_card">
+						 		<img src="images/sns01.jpg" alt="">
+						 		<div class="card-txt">
+						 			<p>
+						 				아직도 기라델리 도넛을<br>안 먹어 보셨다구요?<br>영상 속 기라델리 도넛을 보고<br>기대평을 남겨주시면<br>20명에게 기라델리 도넛을<br>즐길 수 있는 어소티드<br>하프더즌을...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 	</div>
+						</li>
+						<li>
+						 	<div class="sns_card">
+						 		<div class="card-Htxt">
+						 			<p>
+						 				심심할 때, 출출할 때<br>그리고 달콤함이 필요할 때<br>언제나 크리스피 크림 도넛<br>달콤한 수요일,<br>함께 나누는 즐거움,<br>달콤한 센스로 완성해...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 		<img src="images/sns02.jpg" alt="">
+						 	</div>
+						</li>
+						<li>
+						 	<div class="sns_card">
+						 		<img src="images/sns04.jpg" alt="">
+						 		<div class="card-txt">
+						 			<p>
+						 				아직도 기라델리 도넛을<br>안 먹어 보셨다구요?<br>영상 속 기라델리 도넛을 보고<br>기대평을 남겨주시면<br>20명에게 기라델리 도넛을<br>즐길 수 있는 어소티드<br>하프더즌을...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 	</div>
+						</li>
+					</ul>
+					<ul class='clearfix'>
+						<li>
+						 	<div class="sns_card">
+						 		<img src="images/sns06.jpg" alt="">
+						 		<div class="card-txt">
+						 			<p>
+						 				심심할 때, 출출할 때<br>그리고 달콤함이 필요할 때<br>언제나 크리스피 크림 도넛<br>달콤한 수요일,<br>함께 나누는 즐거움,<br>달콤한 센스로 완성해...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 	</div>
+						</li>
+						<li>
+						 	<div class="sns_card">
+						 		<div class="card-Htxt">
+						 			<p>
+						 				아직도 기라델리 도넛을<br>안 먹어 보셨다구요?<br>영상 속 기라델리 도넛을 보고<br>기대평을 남겨주시면<br>20명에게 기라델리 도넛을<br>즐길 수 있는 어소티드<br>하프더즌을...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 		<img src="images/sns05.jpg" alt="">
+						 	</div>
+						</li>
+						<li>
+						 	<div class="sns_card">
+						 		<img src="images/sns03.jpg" alt="">
+						 		<div class="card-txt">
+						 			<p>
+						 				심심할 때, 출출할 때<br>그리고 달콤함이 필요할 때<br>언제나 크리스피 크림 도넛<br>달콤한 수요일,<br>함께 나누는 즐거움,<br>달콤한 센스로 완성해...
+						 			</p>
+						 			<img src="images/like_ico.png" alt="">
+						 		</div>
+						 	</div>
+						</li>
+					</ul>
+				</div>
+				<div class="preBtn03"><img src="images/prev03.png" alt=""></div>
+				<div class="nextBtn03"><img src="images/next03.png" alt=""></div>
+			</div>
+		</div>
+		<div class="job">
+			<ul class='clearfix'>
+				<li class='double'onclick="location.href='#'">
+					<div class="card_double">
+						<h2 class='mb20'>Brand Story</h2>
+						<h1>여러분들께 드리는<br>최고의 선물입니다.</h1>
+					</div>
+					<div class="aBtn">
+						<a href="#">자세히 보기</a>
+					</div>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li class='double'onclick="location.href='#'">
+					<div class="card_double">
+						<h2 class='mb20'>Brand Story</h2>
+						<h1>여러분들께 드리는<br>최고의 선물입니다.</h1>
+					</div>
+					<div class="aBtn">
+						<a href="#">자세히 보기</a>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
+
+	<div class="test" style='height: 400px;'></div>
 </body>
 </html>
