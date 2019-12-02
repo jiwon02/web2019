@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>practice</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		img{width: 100%;display: block;}
+		.container{width: 1200px;margin: 0 auto;}
+		.container .row{width: 100%;}
+		.container div{float: left;width: 25%;}
+
+		@media screen and (min-width: 960px){
+			body{background-color: pink;}
+		}
+		@media screen and (max-width:959px){
+			body{background-color: orange;}
+			.container {width: 100%;}
+			.container div{width: 50%;}
+		}
+		@media screen and (max-width:570px) {
+			body{background-color: skyblue;}
+			.container{width: 100%;}
+			.container div{width: 100%;}
+			.m-none{display: none;}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div class='m-none'><img src="../images/testimg.jpg" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -12,16 +12,7 @@
 .bx-wrapper .bx-pager{
 	bottom: 345px;
 }
-.aBtn{
-	width: 202px;
-	background: url(../images/dbtn.png) no-repeat center;
-}
-.aBtn a{
-	display: block;
-	text-align: center;line-height: 40px;
-	color: #fff; font-weight: bold;
-	padding-left: 20px;
-}
+
 
 header{height: 1955px;position: relative;margin-bottom: 80px;}
 #main_wrap{
@@ -103,8 +94,7 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 }
 .double{width: 50% !important;}
 .hdouble{height: 630px !important;}
-#container .card,
-.job .card{
+#container .card{
 	position: absolute;
 	top: 50%;margin-top: -96.5px;
 	left: 50%;margin-left: -75px;
@@ -118,7 +108,7 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 	padding-top: 50px;padding-left: 35px;
 }
 #container .card_double h2:after,
-.job .card_double h2:after{
+.job .card_double h1:after{
 	content:"";display: block;
 	width: 55px;height: 2px;background-color: #fff;
 	margin-top: 20px;
@@ -204,7 +194,7 @@ section{height: 700px;
 }
 
 
-#sec02{width: 1260px;margin: 0 auto;padding-top: 80px;}
+#sec02{width: 1260px;margin: 0 auto;padding-top: 80px;margin-bottom: 80px;}
 #sec02 .sns01{float: left;
 	width: 315px;height: 630px;
 	background-color: #39180F;
@@ -249,4 +239,38 @@ section{height: 700px;
 #sec02 .preBtn03{left: -100px;}
 #sec02 .nextBtn03{left: -70px;}
 #sec02 .job{width: 1260px;margin: 0 auto;}
-#sec02 .job li{float: left;background-color: skyblue;}
+#sec02 .job li{float: left;height: 315px;
+	color: #3D2E06 !important;
+}
+#sec02 .job li:first-child{
+	background: #89BBC7 url(../images/group.png);
+}
+#sec02 .job li:last-child{
+	background: #21332C url(../images/job.png);
+}
+
+#sec02 .job p{font-weight: bold;font-size:20px;}
+.aBtn{
+	width: 202px;
+	background: url(../images/dbtn.png) no-repeat center;
+	margin-left: 30px;
+}
+.aBtn a{
+	display: block;
+	text-align: center;line-height: 40px;
+	color: #fff; font-weight: bold;
+	padding-left: 20px;
+}
+
+footer{border-top: 1px solid #404040;}
+#ft{width: 1260px;margin: 0 auto;padding-top: 40px;margin-bottom: 40PX;}
+#ft .ft_logo{float: left;line-height: 90px;}
+#ft .ft_txt{float: left;margin-left: 80PX;}
+#ft .ft_txt li{float: left;	border-left: 1px solid #404040;padding: 0 20px;}
+#ft .ft_txt li:first-child{border-left: none;padding: 0 20px 0 0;}
+#ft .ft_txt a{
+	display: block;
+	text-align: center;
+	font-weight: bold; color:#404040;
+}
+#ft .ft_txt p{color: #404040;padding-top: 5px;}
