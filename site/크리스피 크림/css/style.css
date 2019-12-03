@@ -275,3 +275,8 @@ footer{border-top: 1px solid #404040;}
 	font-weight: bold; color:#404040;
 }
 #ft .ft_txt p{color: #404040;padding-top: 5px;}
+
+/*sub_product*/
+.sub_hd{height: 400px;}
+.product{background: skyblue;}
+
