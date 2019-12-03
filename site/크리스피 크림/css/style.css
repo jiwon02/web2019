@@ -101,6 +101,7 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 	font-size:20px;font-weight: bold;
 	color: #fff ;
 	text-align: center;
+	transition: 0.1s;
 }
 #container .card_double,
 .job .card_double{
@@ -122,7 +123,7 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 	width: 55px;height: 2px;background-color: #fff;
 	margin-top: 20px;
 }
-
+#container li:hover .card{transform: scale(1.1,1.1)}
 #container h1{font-size:1.8em;}
 #container li:nth-child(1){background-color: #A3E3FF;}
 #container li:nth-child(2){background:url(../images/new.png) no-repeat;}
