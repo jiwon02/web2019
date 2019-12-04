@@ -124,10 +124,10 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 	margin-top: 20px;
 }
 #container li:hover .card{transform: scale(1.1,1.1)}
+
 #container h1{font-size:1.8em;}
 #container li:nth-child(1){background-color: #A3E3FF;}
 #container li:nth-child(2){background:url(../images/new.png) no-repeat;}
-
 #container li:nth-child(3){background-color: #fff;position: relative;}
 #container li:nth-child(3) h2{position: absolute;top: 45px;left: 35px;}
 #container .slider02_txt{float: left;width: 50%;height: 315px;position: relative;}
