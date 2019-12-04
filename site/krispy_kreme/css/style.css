@@ -277,6 +277,7 @@ footer{border-top: 1px solid #404040;}
 #ft .ft_txt p{color: #404040;padding-top: 5px;}
 
 /*sub_product*/
-.sub_hd{height: 400px;}
-.product{background: skyblue;}
-
+.sub_hd{height: 300px;}
+.product{background: #1F6B4F url(../images/sub/product_bg02.png);}
+.sub_content{background: url(../images/sub/bg_dot.png);}
+.sub_content img{margin: 0 auto;}
