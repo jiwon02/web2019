@@ -1,6 +1,7 @@
 @charset "utf-8";
 *{font-family: 'Nanum Gothic', sans-serif;}
 .mb20{margin-bottom: 20px !important;}
+.pb20{padding-bottom: 20px !important;}
 .bx-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -28,9 +29,11 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 #main_wrap .logo{
 	position: absolute;left: 20px;top: 50%;margin-top: -25px;	
 }
+
+#main_wrap .logo img{border:0 ;}
 #main_wrap .menu{
 	position: absolute;right: 115px;top: 50%;margin-top: -35px;
-	width: 500px;height: 70px;
+	width: 550px;height: 70px;
 }
 #main_wrap .menu>ul>li{
 	float: left; 
