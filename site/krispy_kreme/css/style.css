@@ -218,7 +218,7 @@ section{height: 700px;
 	width: 945px;height: 630px;background-color: beige;
 	position: relative;
 }
-#sec02 .sns02 li{float: left;width: 315px;}
+#sec02 .sns02 li{float: left;width: 33.33%;}
 #sec02 .sns_card .card-txt,
 #sec02 .sns_card .card-Htxt{
 	background-color: #FFFCE3;
