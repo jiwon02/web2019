@@ -79,13 +79,12 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 }
 #main_wrap .language>div:hover{background-color: #298868;color: #E8E3DD;}
 #hd_wrap .slider01_wrap {height: 1010px;position: relative;}
-#hd_wrap .slider01_wrap img{width: 100% ! important;}
 .preBtn,.nextBtn{
 	position: absolute;top: 352.5px;
 }
 .preBtn{left: 50%;margin-left: -700px;}
 .nextBtn{right: 50%;margin-right: -700px;}
-#hd_wrap .slider01 img{height: 1010px;}
+#hd_wrap .slider01 img{height: 1010px;_width: 100% !important;}
 
 
 #container{
