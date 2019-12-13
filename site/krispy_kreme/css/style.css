@@ -79,7 +79,7 @@ header{height: 1955px;position: relative;margin-bottom: 80px;}
 }
 #main_wrap .language>div:hover{background-color: #298868;color: #E8E3DD;}
 #hd_wrap .slider01_wrap {height: 1010px;position: relative;}
-#hd_wrap .slider01_wrap img{width: 100%;}
+#hd_wrap .slider01_wrap img{width: 100% ! important;}
 .preBtn,.nextBtn{
 	position: absolute;top: 352.5px;
 }
