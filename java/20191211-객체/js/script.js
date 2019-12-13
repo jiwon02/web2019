@@ -137,6 +137,93 @@ document.getElementById("txt").style.fontSize =Math.floor((Math.random()*100)+10
 
 /*랜덤을 통해서 출력되는 정수값을 1~5*/
 var random_img = Math.floor((Math.random()*9)+1);
-document.write("<img src='img/view"+random_img+".jpg'>");
+document.write("<img src='img/view"+random_img+".jpg'>", "<br>");
 //만약 Math.random()으로부터 받아온 값이 0.0000000001이라면 0.0000000001*9=>0.0000000009 좌측의 값으로부터 1을 더한다면 1.0000000009=> 내림(Math.floor)을 적용하기 때문에 최종값은 1
 //만약 Math.random()으로부터 받아온 값이 0.99이라면 0.99*9=>8.91 좌측의 값으로부터 1을 더한다면 9.91=> 내림(Math.floor)을 적용하기 때문에 최종값은 9
+
+/*문자 객체*/
+var txt = "hello thank You good luck to you";
+/*
+12345678901234567890123456789012
+hello thank You good luck to you
+01234567890123456789012345678901
+*/
+document.write(txt.charAt(7), "<br>");  //.charAt(숫자) : 왼쪽으로부터 인덱스 번호(숫자)를 측정하여 해당하는 문자를 반환
+document.write(txt.indexOf("you"), "<br>");  //txt.indexOf("문자") : 왼쪽으로부터 최초로 시작하는 인덱스 번호를 봔환(대소문자 구별)
+document.write(txt.indexOf("o", 10), "<br>");  //indexOf("문자", 숫자) : 인덱스 번호가 (숫자) 이후 부터 동일한 문자를 찾아서 인덱스 번호를 반환
+document.write(txt.lastIndexOf("ou"), "<br>");  //lastIndexOf("문자") : 오른쪽으로부터 문자를 찾아서 최초로 일치하는 시작문자의 인덱스 번호를 반환
+document.write(txt.match("good"), "<br>");  //match("문자") : "문자"를 찾아서 왼쪽으로부터 최초로 일치하는 문자를 반환. 이 때 찾는 문자가 없다면 null을 반환
+document.write(txt.search("luck"), "<br>");  //search("문자") : "문자"를 왼쪽으로부터 찾아서 최초로 시작되는 인덱스 번호를 반환
+document.write(txt.substr(12, 3), "<br>");  //substr(12, 3) : 인덱스 번호 12번부터 3개의 문자를 반환(인덱스 번호에 해당하는 문자를 포함)
+document.write(txt.substring(16, 20), "<br>");  //substring(16, 20) : 인덱스 번호 16번부터 인덱스 번호 20 이전의 구간까지의 문자를 반환
+document.write(txt.replace("You", "Me"), "<br>");  //replace("바꿀 문자", "새 문자") : 문자열 중에서 바꿀 문자를 새문자로 교체
+document.write(txt.replace("You", ""), "<br>");  //replace("바꿀 문자", "새 문자") : 문자열 중에서 바꿀 문자를 새문자로 교체(제거)
+document.write(txt.toLowerCase(), "<br>");  //소문자 변경
+document.write(txt.toUpperCase(), "<br>");  //대문자 변경
+document.write(txt.length, "<br>");  //★★★★문자 데이터의 개수를 반환(띄어쓰기 포함)★★★★
+var $strArr = txt.split(" ");  //★★split(" ") : 공백의 문자를 기준으로 각 단어를 끊어서 배열로 저장한다는 의미★★
+//$strArr = ["hello", "thank", "You", "good", "luck", "to", "you"];
+document.write($strArr[1], "<br>");
+/*문자 객체 실습 응용*/
+/*
+01012345678
+01234567890
+*/
+var $phoneNum = "010-1234-5678";
+var $resultNum = $phoneNum.substring(0, 7) + "****";
+document.write($resultNum, "<br>");
+/*
+010-1234-5678, 010 1234 5678, 01012345678 : 공백 또는 기호가 포함 또는 공백이 없는 경우  
+*/
+var $result = $phoneNum.substring(0, $phoneNum.length-4) + "****";
+document.write($result, "<br>");
+
+/*베열 객체 : DB내의 데이터처럼 운용이 가능 - 장점*/
+var $member = ["유재석", "김종국", "하하", "이광수", "송지효", "지석진", "전소민", "양세찬"];
+document.write("벌칙 대상자1 : "+ $member[3], "<br>");
+document.write("벌칙 대상자2 : "+ $member[5], "<br>");
+
+var $arr_day = ["일", "월", "화", "수", "목", "금", "토"];
+var $today = new Date();
+var $yoil = $arr_day[$today.getDay()];
+document.write("오늘은 "+$yoil+"요일 입니다.", "<br>");
+
+var $img_day = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+var nowDay = $img_day[$today.getDay()];
+document.write("<img src='img/img-day/"+nowDay+".gif'>", "<br>");
+
+var $member = ["유재석", "김종국", "하하", "이광수", "송지효", "지석진", "전소민", "양세찬"];
+$member.pop();  //pop() : 배열 데이터 중에서 마지막 인덱스의 데이터를 삭제 ["유재석", "김종국", "하하", "이광수", "송지효", "지석진", "전소민"]
+document.write($member[7], "<br>");  //데이터가 존재하지 않기 때문에 undefined
+document.write($member.length, "<br>");  //마지막이 제거되어 7으로 반환
+$member.push("강하늘");  //push() : 마지막 인덱스에 데이터를 추가 ["유재석", "김종국", "하하", "이광수", "송지효", "지석진", "전소민", "강하늘"]
+document.write($member[7], "<br>");
+document.write($member.length, "<br>");
+$member.shift();  //shift() : 첫번째 인덱스 데이터 삭제 ["김종국", "하하", "이광수", "송지효", "지석진", "전소민", "강하늘"]
+document.write($member[0], "<br>");
+document.write($member.length, "<br>");
+$member.unshift("공효진");  //첫번째 인덱스에 새로운 데이터를 추가 ["공효진", "김종국", "하하", "이광수", "송지효", "지석진", "전소민", "강하늘"]
+document.write($member[0], "<br>");
+document.write($member.length, "<br>");
+
+/*이차 배열을 활용한 콘텐츠 구성하기*/
+var $arr_bx = [
+	["shop_01.jpg", "마마스앤파파스", "NEW 스너그 트레이완구 포함", "월 17,400원"],
+	["shop_02.jpg", "알집매트", "알집 꾸러기소파", "월 7,500원"],
+	["shop_03.jpg", "알집매트", "알집 네오소파", "월 8,300원"],
+	["shop_04.jpg", "알집매트", "알집 핑크퐁소파", "월 9,100원"]
+];
+document.write("<div class='outer'>");
+for(i=0; i<$arr_bx.length; i++){
+	document.write("	<div class='box'><img src='img/img_arr_02/"+$arr_bx[i][0]+"' alt='"+(i+1)+"번 이미지'><h2>"+$arr_bx[i][1]+"</h2><p class='context'>"+$arr_bx[i][2]+"</p><p class='price'>"+$arr_bx[i][3]+"</p></div>");
+}
+
+document.write("</div>");
+/*
+$arr_bx[0][0]의 의미
+1.$arr_bx[0] : 1차 배열의 0번 인덱스로 접근 
+2.$arr_bx[0][0] : 1차 배열의 0번 인덱스로 접근하여 2차 배열의 0번 인덱스의 값을 가져온다.
+3.$arr_bx[0][1] : 1차 배열의 0번 인덱스로 접근하여 2차 배열의 1번 인덱스의 값을 가져온다.
+4.$arr_bx[0][2] : 1차 배열의 0번 인덱스로 접근하여 2차 배열의 2번 인덱스의 값을 가져온다.
+5.$arr_bx[0][3] : 1차 배열의 0번 인덱스로 접근하여 2차 배열의 3번 인덱스의 값을 가져온다.
+*/
