@@ -14,7 +14,7 @@
 	bottom: 345px;
 }
 
-
+body{overflow-x:hidden;}
 header{height: 1955px;position: relative;margin-bottom: 80px;}
 #main_wrap{
 	position:fixed;z-index:1;
