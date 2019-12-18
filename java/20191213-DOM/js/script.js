@@ -80,3 +80,6 @@ window.onload=function(){	//윈도우라는 최상위 객체가 로딩이 완료
 
 
 }
+
+
+

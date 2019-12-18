@@ -155,3 +155,29 @@ function chgImg(){
 chgImg();
 
 
+//실습 5번
+/*
+var $img_01=["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg"]
+var i=0;
+var $result_05=document.getElementById("result_05");
+$result_05.innerHTML="<img id='img' src='img/"+$img_01[i]+"'></img>";
+function click_01(){
+	var $img_05=document.getElementById("img");
+	i++;  //1, 2, 3,4,5,6,7,8
+	$img_05.setAttribute("src", "img/"+$img_01[i]);
+	if(i>=8){
+		i= -1;
+	}
+}
+
+실습 6번
+var k=1;
+var $res_06=document.getElementById("res_06");
+function subNext(){
+	$res_06.setAttribute("src", "img/sub_0"+k+".jpg");
+	k++;
+	if(k>3){
+		k=1;
+	}
+}
+*/
