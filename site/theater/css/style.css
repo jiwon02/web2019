@@ -100,3 +100,12 @@ section{width: 100%;height: auto;}
 #container .content:nth-child(10){background: #aaaaff;}
 #container .content:nth-child(11){padding: 40px;}
 #container .content:nth-child(12){background: #aaaaff;}
+
+#ft{
+	display: table;
+	margin-left: 300px; 
+	width: -webkit-calc(100% - 300px); width: -moz-calc(100% - 300px); width: calc(100% - 300px);
+	height: 40px;
+	background: #333;
+}
+#ft p{color:#fff;padding: 0 40px;display: table-cell;vertical-align: middle;}
