@@ -1,0 +1,64 @@
+﻿[투자회사]
+1. 색상정보
+ - Main Color:
+ - Sub Color:
+ - Impact Color: 
+
+2. 폰트정보(포토샵을 오픈하기전 시스템 글꼴에 먼저 넣기 바랍니다. - 폰트가 적용 안됨)
+ - Main Font : Stem [파일 내부의 폰트를 웹용 폰트로 변환시키고 사용할 것!]
+ - 
+
+
+
+3. 메뉴항목 및 메인 이미지 (폰트 색상 : #5c5c5c / #755562(마우스 오버시), 메인 이미지의 하단에 위치한 cloud 파일은 애니메이션 적용하여 좌우로 이동시킬 것)
+ - Home
+ - About Us
+ - Partnership
+ - News
+ - Faq
+ - Support
+ - Login
+
+ - (Button Type) CREATE ACCOUNT
+ - 메인 이미지를 기준으로 텍스트 그룹을 수직 방향 중앙에 정렬 (CREATE A BRIGHT FUTURE / INVESTPLAN / (BUTTON)REGISTRATION / (BUTTON)LOGIN ACCOUNT)
+
+
+4. Section_01 Contents
+What is a “InvestPlan”?
+ - A InvestPlan group is an organization that builds or buys a group of properties and then sells them to investors as rental properties.
+
+BREAKING DOWN “InvestPlan”
+ - These groups provide a service for rental properties that is similar to mutual funds in that investors can reap some of the benefits of owning rental properties without having to manage them.
+
+Incredible Strategy & Analisys
+ - In exchange for finding tenants, handling maintenance and other responsibilities, the organization receives a portion of the investors' monthly rent proceeds.
+
+
+
+5. Section_02 Contents (배경 이미지는 background-attachment:fixed를 활용하여 고정시킬 것! 내부 타이틀은 박스의 중앙에 위치시킬 것)
+InvestPlan perspectives on starting to invest
++Detail More
+
+
+
+6. Section_03 (Our Branches - 마우스 오버시 박스에 그림자 부여할 것 0px 0px 6px #000 / 각 박스의 테두리에 border-radius:4px 부여 / 내부 이미지는 1.05배 확대 )
+Newyork in USA
+ - Our vision is to be one of the most trusted providers of investment management expertise and long-term financial security.
+
+Tokyo in Japan
+ - Japan is transforming – the world’s third largest economy is actively opening its doors to foreign business. It is creating the best possible environment for...
+ 
+Sydney in Australia
+ - The Australian Government welcomes foreign investment. As the Australian Government's investment promotion agency, Austrade works to inform ...
+
+Istanbul in Turkey
+ - If you are looking to raise money for a fund or build relationships for future opportunities, then this is the place to be.
+
+
+
+7. Footer
+ - PO Box 4668, New York, NY 10163-4668, US 
+ - Mail scanning Cloud storage Full-text search Check deposit Bill pay
+ - Copyrights © 2019. InvestPlan. All Rights Reserved.
+
+
