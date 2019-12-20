@@ -28,7 +28,7 @@ header{width: 300px;height: 100%; position: fixed;}
 #header-frame{width: 100%;height: 100%;position: relative;}
 #header-frame .logo{width: 100%; height: auto;text-align: center; padding-top: 80px;padding-bottom: 70px;}
 #header-frame .logo img{width: 140px;height: 140px;}
-#header-frame .menu{padding-left: 102px;}
+#header-frame .menu{padding: 0 0 0 102px;}
 #header-frame .menu a{display: block; padding-bottom: 20px;color:#555;font-weight: bold;}
 #header-frame .menu li:nth-child(1) i{font-style: italic;}
 #header-frame .menu li:nth-child(3) i{transform: rotate(-45deg);}
@@ -58,6 +58,7 @@ section{
 	vertical-align: middle;
 	color: #fff;
 	font-size:15px;
+	font-family: 'Nanum Gothic';
 }
 #sec_hd .p_1st:after{content:"";display: block;
 	width: 1px;height: 20px;background: #fff;
@@ -72,16 +73,17 @@ section{
 	width: 20%;height: 25%;
 	float: left;
 }
-#container .content h4{font-size: 35px;}
+#container .content h4{font-size: 25px;}
+#container .content p{font-size: 13px;}
 .img_txt{position: relative;}
 .img_txt p{	
-	position: absolute;bottom: -10px;right: 0;
-	color: #fff; font-size:43px;
+	position: absolute;bottom: 0;right: 0;
+	color: #fff; font-size:43px !important;
 }
 #container .content:nth-child(1){width: 60%;height: 50%;}
 #container .content:nth-child(1) img{width: 100%;height: 100%;}
 #container .content:nth-child(1) p{
-	font-weight: bold; font-size: 175px;
+	font-weight: bold; font-size: 175px !important;
 	text-shadow: 0 0 3px #000;
 }
 #container .content:nth-child(2){width: 40%;padding: 40px;}
@@ -98,6 +100,7 @@ section{
 #container .content:nth-child(9){width: 40%;background: #6ce2fb; overflow:hidden;position: relative;padding: 40px;}
 #container .content:nth-child(9) h4{color: #fff;}
 #container .content:nth-child(9) p{color: #fff;}
+#container .content:nth-child(9) span{display: none;}
 #container .content:nth-child(9) img{
 		width: 60%;height: 60%;
 		position: absolute; left:70%;top: 135px;
