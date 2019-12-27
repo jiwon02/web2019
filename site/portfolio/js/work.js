@@ -5,11 +5,19 @@ $(document).ready(function(){
 		["img_03.jpg", "title_03", "context_03", "https://www.daum.net"]
 	];
 	$(".grid-item a").click(function(){
+		$(".popup_bg").addClass("active");
+		$(".popup_frame").addClass("active");
+
 		var $index=$(this).closest(".grid-item").index();
 		$(".popup_img").css("background-image", "url(img/work/"+$item_arr[$index][0]+")");
 		$(".popup_title").text($item_arr[$index][1]);
 		$(".popup_text").text($item_arr[$index][2]);
 		$(".popup_link a").attr("href", $item_arr[$index][3]);
+		return false;
+	});
+	$(".popup_bg, .close").click(function(){
+		$(".popup_bg").removeClass("active");
+		$(".popup_frame").removeClass("active");
 		return false;
 	});
 
