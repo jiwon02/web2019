@@ -13,7 +13,11 @@ a{text-decoration: none;}
 .total_pd{width:80%; height:auto; margin:0 auto;}
 .sort_button{padding:20px 0;}
 .sort_button button{padding:10px 20px; background:#fff; border:1px solid #777; border-radius:4px; cursor:pointer;}
-.sort_button button:hover{background:#ddd;}
+.sort_button button:hover{background:#ddd;} 
+
+.sort{padding:10px 20px; background:#fff; border:1px solid #777; border-radius:4px; cursor:pointer; background:url(../img/arrow-down.png) no-repeat 95% 50%; background-size: auto 16px; -webkit-appearance:none; appearance:none;}
+
+
 
 .pd_frame{width:100%; height:auto; background:#fff; padding:20px 20px 0; border:1px solid #bbb; border-radius:4px;}
 .pd_frame:after{content:""; display: block; clear: both;}
@@ -34,3 +38,8 @@ a{text-decoration: none;}
 .pd_frame .pd_box .pd_info .fav span{color:#ff0000;}
 
 
+.pager{width:100%; height:auto; padding:20px 0;}
+.pager ul{text-align:center; font-size:0;}
+.pager ul li{display:inline-block; padding:0 10px; border-left:1px solid #ccc; font-size:13px; color:#777; cursor:pointer;}
+.pager ul li:first-child{border:none;}
+.pager ul li.active{color:#ff0000;}
