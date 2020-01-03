@@ -1,5 +1,4 @@
 @charset "utf-8";
-*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
 .snapshot{width: 100%;height: auto;}
 .snapshot .frame{width: 960px;height: auto;margin: 0 auto;padding-bottom: 20px;}

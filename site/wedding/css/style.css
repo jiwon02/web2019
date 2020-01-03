@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
 
 *{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{font-family: 'Poppins', sans-serif; margin: 0; padding: 0;}
@@ -9,6 +11,9 @@ ul, ol{margin: 0; padding: 0; list-style: none;}
 h1,h2,h3,h4,h5,h6,p{margin: 0;}
 a{text-decoration: none;}
 .clear{clear: both;}
+
+.great{font-family: 'Great Vibes', cursive;}
+.josefin{font-family: 'Josefin Slab', serif;}
 
 #sub_hd{width: 100%;height: 20px;background: #474747;}
 #sub_hd .sub_menu{width: 1200px;height: 100%;margin: 0 auto;}
@@ -28,6 +33,7 @@ a{text-decoration: none;}
 	width: 100%;height: auto; 
 	position: absolute;top: 0;
 	background: rgba(255,255,255,0.8);
+	z-index: 1;
 }
 #hd .hd_menu .main_menu{
 	width: 1000px;height:60px;
@@ -37,14 +43,32 @@ a{text-decoration: none;}
 #hd .hd_menu .main_menu li{
 	display: inline-block;
 	width: 20%;height: 100%;
-	text-align: center;vertical-align: middle;
-
+	text-align: center;
+	vertical-align: middle;
 }
 #hd .hd_menu .main_menu li a{color:#777; font-size:13px;}
-#hd .hd_menu .main_menu li img{display: block;width: 100%;height: 100%;text-align: center;vertical-align: middle;}
+#hd .hd_menu .main_menu .logo img{width: 100%;height: 40px;text-align: center;margin-top: 10px;}
+
 #hd .main_img{
 	width: 100%;height: 540px;
 	background: url(../img/h3-slider1-background.jpg) center no-repeat;
+	position: relative;
 }
+#hd	.main_img .main_img_txt{
+	position: absolute;
+	top: 50%;left: 50%;
+	transform: translate(-50%, -10%);
+	text-align: center;
+	color: #fff;
+}
+#hd	.main_img .main_img_txt .josefin{font-size: 25px;}
+#hd	.main_img .main_img_txt .great{font-size: 80px;}
 
-
+#concept{
+	width: 100%;height: 660px;
+	background-image: url(../img/section_deco_left.png), url(../img/section_deco_right.png);
+	background-repeat: no-repeat;
+	background-size: 250px auto, 250px auto;
+	background-position: 0 -10%, 100% 103%;
+}
+#concept h3{transform-origin: left bottom;transform:rotate(90deg);}

@@ -87,8 +87,8 @@ $(document).ready(function(){
 
 	$("#ex_09 .login-box").hide();
 	$("#ex_09 .op_btn").click(function(){
-		$(".dark-bg").addClass("active_bg");
-		$(".login-box").show();
+		$("#ex_09 .dark-bg").addClass("active_bg");
+		$("#ex_09 .login-box").show();
 	});
 	$("#ex_09 .dark-bg, #ex_09 .cls_btn").click(function(){
 		$("#ex_09 .dark-bg").removeClass("active_bg");
@@ -108,13 +108,22 @@ $(document).ready(function(){
 		$("#ex_10 .dark-bg").addClass("active_bg");
 	});
 	$("#ex_10 .register-box h6").click(function(){
+		$("#ex_10 .register-box").hide();
 		$("#ex_10 .login-box").show();
 	});
 	$("#ex_10 .dark-bg, #ex_10 .cls_btn").click(function(){
-		$(".dark-bg").removeClass("active_bg");
+		$("#ex_10 .dark-bg").removeClass("active_bg");
 		$("#ex_10 .login-box, #ex_10 .register-box").hide();
 	});
 
+	$("#ex_11 .cont-bg, .cont-img, .cont-text").hide();
+	$("#ex_11 .img_op_btn").click(function(){
+		$("#ex_11 .cont-bg").slideDown(0, function(){
+			$("#ex_11 .cont-img").slideDown(500, function(){
+				$("#ex_11 .cont-text").slideDown();
+			});
+		});
+	});
 
 
 

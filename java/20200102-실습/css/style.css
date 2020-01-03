@@ -133,3 +133,16 @@ a:link, a:visited{color:#000;}
 #ex_10 h6{color:#999; cursor:pointer;}
 #ex_10 h6:hover{color:#ee3535;}
 
+#ex_11 {width:800px; height:600px; margin:0 auto;}
+#ex_11 .img_op{width:100%; height:60px; text-align:center;}
+#ex_11 .img_op .img_op_btn{ padding:8px 16px; background:#aaa; text-decoration:none; 
+	font-size:16px; cursor:pointer; border-radius:4px;}
+#ex_11 .img_op .img_op_btn:hover{background:#888; color:#fff;}
+#ex_11 .cont-box{width:400px; height:360px; margin-top:20px; margin-left:auto; margin-right:auto;  position:relative;}
+#ex_11 .cont-box .cont-bg{width:100%; height:100%; background:#fff; box-shadow:0 0 4px #000; 
+	position:absolute; left:0; top:0;}
+#ex_11 .cont-box .cont-img{width:360px; height:200px; overflow:hidden; position:absolute; left:20px; top:20px; z-index:2;}
+#ex_11 .cont-box .cont-img img{width:100%; margin-top:-8px;}
+#ex_11 .cont-box .cont-text{width:360px; height:auto; position:absolute; left:20px; bottom:20px; z-index:2;}
+#ex_11 .cont-box .cont-text h4{font-size:24px; margin:0; padding:8px 0;}
+#ex_11 .cont-box .cont-text p{font-size:18px; margin:0;}

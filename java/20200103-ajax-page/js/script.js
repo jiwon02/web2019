@@ -46,6 +46,19 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$("nav li:nth-child(4)").click(function(){
+		$.ajax({
+			url:"epilogue.html",
+			type:"post",
+			success:function(result){
+				$("#content").html(result);
+			}
+		});
+		$("nav li").removeClass("active");
+		$(this).addClass("active");
+		return false;
+	});
+
 
 
 
