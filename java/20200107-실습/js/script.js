@@ -49,9 +49,24 @@ $(document).ready(function(){
 		$(".bg-bk").stop().animate({"left":33.33*$index+"%"}, 500);
 	});
 
+/*
+	$("#test_03 .slide_num li").click(function(){
+		var $sel_btn=$(this).attr("rel");
+		$(".slider li").removeClass("act_img");
+		$(".slider li[data-rel='"+$sel_btn+"']").addClass("act_img");
 
+		$(".slide_num li").removeClass("act_btn");
+		$(this).addClass("act_btn");
+	});
+*/
+	$("#test_03 .slide_num li").click(function(){
+		var $sel_index = $(this).index();
+		$(".slider li").removeClass("act_img");
+		$(".slider li").eq($sel_index).addClass("act_img");
 
-
+		$(".slide_num li").removeClass("act_btn");
+		$(this).addClass("act_btn");
+	});
 
 
 
